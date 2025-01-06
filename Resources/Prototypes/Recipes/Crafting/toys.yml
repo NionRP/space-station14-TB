@@ -1,16 +1,4 @@
-﻿- type: construction
-  name: Плюшевый ревенант
-  id: PlushieGhostRevenant
-  graph: PlushieGhostRevenant
-  startNode: start
-  targetNode: plushie
-  category: construction-category-misc
-  objectType: Item
-  description: Игрушка, которой можно напугать медотсек.
-  icon:
-    sprite: Mobs/Ghosts/revenant.rsi
-    state: icon
-
+﻿
 - type: construction
   name: Игрушечный Иан
   id: ClothingOuterSuitIan

@@ -196,20 +196,20 @@
             - CartridgePistol
 
 - type: entity
-  name: N1984
+  name: TT
   parent: BaseWeaponPistol
-  id: WeaponPistolN1984 # the spaces in description are for formatting.
-  description: The sidearm of any self respecting officer.     Comes in .45 magnum, the lord's caliber. 
+  id: WeaponPistolTT # the spaces in description are for formatting.
+  description: The TT is a self-loading pistol developed in 1930 by Soviet designer Fyodor Vasilyevich Tokarev.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+    sprite: Objects/Weapons/Guns/Pistols/TT.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+    sprite: Objects/Weapons/Guns/Pistols/TT.rsi
   - type: Gun
     minAngle: 1
     maxAngle: 20
@@ -240,9 +240,9 @@
             - CartridgeMagnum
 
 - type: entity
-  name: N1984
-  parent: WeaponPistolN1984
-  id: WeaponPistolN1984Nonlethal
+  name: TT
+  parent: WeaponPistolTT
+  id: WeaponPistolTTNonlethal
   suffix: Non-lethal
   components:
   - type: ItemSlots

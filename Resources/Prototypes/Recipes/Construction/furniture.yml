@@ -51,23 +51,6 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: Латунный стул
-  id: ChairBrass
-  graph: Seat
-  startNode: start
-  targetNode: chairBrass
-  category: construction-category-furniture
-  description: Вы сидите на нём. Либо по вашей воле, либо по принуждению.
-  icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: brass_chair
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
   name: Белое офисное кресло
   id: ChairOfficeLight
   graph: Seat
@@ -119,23 +102,6 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: Кресло пилота
-  id: chairPilotSeat
-  graph: Seat
-  startNode: start
-  targetNode: chairPilotSeat
-  category: construction-category-furniture
-  description: Кресло пилота престижного корабля.
-  icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: shuttle
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
   name: Деревянный стул
   id: ChairWood
   graph: Seat
@@ -146,57 +112,6 @@
   icon:
     sprite: Structures/Furniture/chairs.rsi
     state: wooden
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: Мясной стул
-  id: ChairMeat
-  graph: Seat
-  startNode: start
-  targetNode: chairMeat
-  category: construction-category-furniture
-  description: Неприятно потный.
-  icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: meat
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-  - !type:TileNotBlocked
-
-- type: construction
-  name: Ритуальный стул
-  id: ChairRitual
-  graph: RitualSeat
-  startNode: start
-  targetNode: chairRitual
-  category: construction-category-furniture
-  description: Выглядит неудобно.
-  icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: ritual
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: Раскладной стул
-  id: ChairFolding
-  graph: Seat
-  startNode: start
-  targetNode: chairFolding
-  category: construction-category-furniture
-  description: Если вы унесёте шесть за раз - вы станете самым крутым парнем в актовом зале.
-  icon:
-    sprite: Structures/Furniture/folding_chair.rsi
-    state: folding
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -290,23 +205,6 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: Укреплённый стол
-  id: TableReinforced
-  graph: Table
-  startNode: start
-  targetNode: TableReinforced
-  category: construction-category-furniture
-  description: Квадратный лист металла, стоящий на четырех металлических ножках. Очень прочный.
-  icon:
-    sprite: Structures/Furniture/Tables/reinforced.rsi
-    state: full
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
   name: Стеклянный стол
   id: TableGlass
   graph: Table
@@ -316,57 +214,6 @@
   description: Квадратный лист стекла, стоящий на четырех металлических ножках.
   icon:
     sprite: Structures/Furniture/Tables/glass.rsi
-    state: full
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: Стол из бронестекла
-  id: TableReinforcedGlass
-  graph: Table
-  startNode: start
-  targetNode: TableReinforcedGlass
-  category: construction-category-furniture
-  description: Квадратный лист стекла, стоящий на четырех металлических ножках. Очень прочный
-  icon:
-    sprite: Structures/Furniture/Tables/r_glass.rsi
-    state: full
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: Стол из плазменного стекла
-  id: TablePlasmaGlass
-  graph: Table
-  startNode: start
-  targetNode: TablePlasmaGlass
-  category: construction-category-furniture
-  description: Квадратный лист плазмы, стоящий на четырех металлических ножках. Красивый!
-  icon:
-    sprite: Structures/Furniture/Tables/plasma.rsi
-    state: full
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: Латунный стол
-  id: TableBrass
-  graph: Table
-  startNode: start
-  targetNode: TableBrass
-  category: construction-category-furniture
-  description: Блестящий, устойчивый к коррозии стол из латуни. Стимпак!
-  icon:
-    sprite: Structures/Furniture/Tables/brass.rsi
     state: full
   objectType: Structure
   placementMode: SnapgridCenter
@@ -625,23 +472,6 @@
   icon:
     sprite: Structures/Furniture/furniture.rsi
     state: bed
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  id: MedicalBed
-  name: Больничная койка
-  description: Больничная койка для реабилитации пациентов. Отдых в ней обеспечивает медленное исцеление.
-  graph: bed
-  startNode: start
-  targetNode: medicalbed
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Furniture/furniture.rsi
-    state: bed-MED
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false

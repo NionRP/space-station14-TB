@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "СС BY-SA 3.0",
+  "copyright": "Designed by @NionRP",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "MedvedMonster",
+      "directions": 4
+    },
+    {
+      "name": "MedvedMonster_dead"
+    }
+  ]
+}

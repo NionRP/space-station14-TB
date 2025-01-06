@@ -1,0 +1,755 @@
+- type: entity
+  name: Fox
+  id: Alice
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Mysterious girl in a fox mask
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Alice/Alice.rsi
+        state: Alice
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: Alice
+        Critical:
+          Base: Alice_dead
+        Dead:
+          Base: Alice_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcClaw
+      soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
+      damage:
+        types:
+          Bloodloss: 10
+          Slash: 10
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3
+      baseSprintSpeed : 5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Alice
+  id: AliceColor
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Alice is a cunning rogue. Do you trust her?
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Alice/AliceColor.rsi
+        state: AliceColor
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: AliceColor
+        Critical:
+          Base: AliceColor_dead
+        Dead:
+          Base: AliceColor_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcClaw
+      soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
+      damage:
+        types:
+          Bloodloss: 10
+          Slash: 10
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3
+      baseSprintSpeed : 5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Alice
+  id: AliceMonster
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Why are you running away, bunny.....
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Alice/AliceMonster.rsi
+        state: AliceMonster
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: AliceMonster
+        Critical:
+          Base: AliceMonster_dead
+        Dead:
+          Base: AliceMonster_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcClaw
+      soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
+      damage:
+        types:
+          Bloodloss: 20
+          Slash: 20
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 4.5
+      baseSprintSpeed : 6.5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Wolf
+  id: Wolchok
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Mysterious girl in a fox mask
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Wolchok/Wolchok.rsi
+        state: Wolchok
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: Wolchok
+        Critical:
+          Base: Wolchok_dead
+        Dead:
+          Base: Wolchok_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcBite
+      soundHit:
+        path: /Audio/Effects/bite.ogg
+      damage:
+        types:
+          Bloodloss: 10
+          Slash: 10
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3
+      baseSprintSpeed : 5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Wolchok
+  id: WolchokColor
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Alice is a cunning rogue. Do you trust her?
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Wolchok/WolchokColor.rsi
+        state: WolchokColor
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: WolchokColor
+        Critical:
+          Base: WolchokColor_dead
+        Dead:
+          Base: WolchokColor_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcBite
+      soundHit:
+        path: /Audio/Effects/bite.ogg
+      damage:
+        types:
+          Bloodloss: 10
+          Slash: 10
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3
+      baseSprintSpeed : 5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Wolchok
+  id: WolchokMonster
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Why are you running away, bunny.....
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Wolchok/WolchokMonster.rsi
+        state: WolchokMonster
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: WolchokMonster
+        Critical:
+          Base: WolchokMonster_dead
+        Dead:
+          Base: WolchokMonster_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcBite
+      soundHit:
+        path: /Audio/Effects/bite.ogg
+      damage:
+        types:
+          Bloodloss: 20
+          Slash: 20
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 4.5
+      baseSprintSpeed : 6.5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Bear
+  id: Medved
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Mysterious girl in a fox mask
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Medved/Medved.rsi
+        state: Medved
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: Medved
+        Critical:
+          Base: Medved_dead
+        Dead:
+          Base: Medved_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcDisarm
+      soundHit:
+        path: /Audio/Effects/woodhit.ogg
+      damage:
+        types:
+          Bloodloss: 10
+          Slash: 10
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3
+      baseSprintSpeed : 5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Medved
+  id: MedvedColor
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Alice is a cunning rogue. Do you trust her?
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Medved/MedvedColor.rsi
+        state: MedvedColor
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: MedvedColor
+        Critical:
+          Base: MedvedColor_dead
+        Dead:
+          Base: MedvedColor_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcDisarm
+      soundHit:
+        path: /Audio/Effects/woodhit.ogg
+      damage:
+        types:
+          Bloodloss: 10
+          Slash: 10
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3
+      baseSprintSpeed : 5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant
+
+- type: entity
+  name: Medved
+  id: MedvedMonster
+  suffix: Tiny Bunny
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Why are you running away, bunny.....
+  components:
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        sprite: Imperial/TinyBunny/Mobs/Medved/MedvedMonster.rsi
+        state: MedvedMonster
+    - type: CombatMode
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 250
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MobState
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: MedvedMonster
+        Critical:
+          Base: MedvedMonster_dead
+        Dead:
+          Base: MedvedMonster_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        500: Dead
+    - type: MeleeWeapon
+      altDisarm: false
+      angle: 0
+      animation: WeaponArcDisarm
+      soundHit:
+        path: /Audio/Effects/woodhit.ogg
+      damage:
+        types:
+          Bloodloss: 20
+          Slash: 20
+          Structural: 35
+    - type: Tag
+      tags:
+        - DoorBumpOpener
+        - NoPaint
+    - type: Speech
+      speechSounds: DoctorDefVoice
+    - type: Hands
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 4.5
+      baseSprintSpeed : 6.5
+    - type: Body
+      prototype: Human
+    - type: NoSlip
+    - type: Vocal
+      sounds:
+        Male: AliceVoice
+        Unsexed: AliceVoice
+        Female: AliceVoice
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        300: 0.8
+    - type: Access
+      groups:
+      - Captain
+    - type: AutoImplant
+      implants:
+       - StorageImplant

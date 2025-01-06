@@ -1,9 +1,9 @@
-department-Cargo = Отдел снабжения
-department-Civilian = Сервисный отдел
-department-Command = Командование
+department-Cargo = Завод
+department-Civilian = Население
+department-Command = Руководство
 department-Engineering = Инженерный отдел
-department-Medical = Медицинский отдел
-department-Security = Служба безопасности
-department-Science = Научный отдел
+department-Medical = Медпункт
+department-Security = Милиция
+department-Science = Колледж
 department-Specific = Гражданские профессии
 department-Juristic = Юридический департамент

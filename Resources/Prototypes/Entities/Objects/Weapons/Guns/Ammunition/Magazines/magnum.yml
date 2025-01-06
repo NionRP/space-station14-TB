@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMagazineMagnum
-  name: pistol magazine (.45 magnum)
+  name: pistol magazine (7,62)
   parent: BaseMagazinePistol
   abstract: true
   components:
@@ -12,7 +12,7 @@
     whitelist:
       tags:
         - CartridgeMagnum
-    capacity: 7
+    capacity: 8
 
 - type: entity
   id: BaseMagazineMagnumSubMachineGun

@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseSign
+  id: KoverBase
+  abstract: true
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: Imperial/TinyBunny/kovriS.rsi
+
+- type: entity
+  parent: KoverBase
+  id: kover1
+  name: Ковер на стене
+  suffix: Tiny Bunny
+  description: Тяжёлый шерстяной ковер, украшающий стену, своеобразный символ эпохи, хранящий тепло и воспоминания.
+  components:
+  - type: Sprite
+    state: kover1
+
+- type: entity
+  parent: KoverBase
+  id: kover2
+  name: Ковер на стене
+  suffix: Tiny Bunny
+  description: Тяжёлый шерстяной ковер, украшающий стену, своеобразный символ эпохи, хранящий тепло и воспоминания.
+  components:
+  - type: Sprite
+    state: kover2

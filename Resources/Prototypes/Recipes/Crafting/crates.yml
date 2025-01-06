@@ -1,13 +1,3 @@
-- type: construction
-  name: Ящик для скота
-  id: CrateLivestock
-  graph: CrateLivestock
-  startNode: start
-  targetNode: cratelivestock
-  category: construction-category-storage
-  description: Деревянный ящик для содержания скота.
-  icon: { sprite: Structures/Storage/Crates/livestock.rsi, state: base }
-  objectType: Structure
 
 - type: construction
   name: Стальной ящик
@@ -20,16 +10,6 @@
   icon: { sprite: Structures/Storage/Crates/generic.rsi, state: icon }
   objectType: Structure
 
-- type: construction
-  name: Защищённый ящик
-  id: CrateSecure
-  graph: CrateSecure
-  startNode: start
-  targetNode: cratesecure
-  category: construction-category-storage
-  description: Надежный металлический ящик для хранения вещей. Доступ может быть настроен с помощью конфигуратора доступов.
-  icon: { sprite: Structures/Storage/Crates/secure.rsi, state: icon }
-  objectType: Structure
 
 - type: construction
   name: Пластиковый ящик
@@ -40,17 +20,6 @@
   category: construction-category-storage
   description: Пластиковый ящик для хранения вещей.
   icon: { sprite: Structures/Storage/Crates/plastic.rsi, state: icon }
-  objectType: Structure
-
-- type: construction
-  name: Картонный ящик
-  id: BigBox
-  graph: BaseBigBox
-  startNode: start
-  targetNode: basebigbox
-  category: construction-category-storage
-  description: Большой ящик, в котором можно хранить вещи или прятаться.
-  icon: { sprite: Structures/Storage/closet.rsi, state: cardboard }
   objectType: Structure
 
 - type: construction

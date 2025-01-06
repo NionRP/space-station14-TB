@@ -23,28 +23,6 @@
   objectType: Item
   
 - type: construction
-  name: Заполненная латунная пластина
-  id: TileBrassFilled
-  graph: TilesBrass
-  startNode: start
-  targetNode: filledPlate
-  category: construction-category-tiles
-  description: Четыре куска латунного напольного покрытия станции, совместимого только с латунным покрытием.
-  icon: { sprite: Objects/Tiles/tile.rsi, state: brass-filled }
-  objectType: Item
-  
-- type: construction
-  name: Гладкая латунная пластина
-  id: TileBrassReebe
-  graph: TilesBrass
-  startNode: start
-  targetNode: reebe
-  category: construction-category-tiles
-  description: Четыре плитки гладкого латунного покрытия станции, совместимого только с латунным покрытием
-  icon: { sprite: Objects/Tiles/tile.rsi, state: reebe }
-  objectType: Item
-
-- type: construction
   name: Белая плитка
   id: TileWhite
   graph: TileWhite
@@ -66,16 +44,6 @@
   icon: { sprite: Objects/Tiles/tile.rsi, state: dark }
   objectType: Item
 
-- type: construction
-  name: Пол из плоти
-  id: TileFlesh
-  graph: TileFlesh
-  startNode: start
-  targetNode: fleshTile
-  category: construction-category-tiles
-  description: Четыре мясистые плитки.
-  icon: { sprite: Objects/Tiles/tile.rsi, state: meat }
-  objectType: Item
 
 # - type: construction
 #   name: techmaint floor

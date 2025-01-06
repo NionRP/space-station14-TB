@@ -14,7 +14,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: ShowSecurityIcons
 
 - type: entity
   parent: ClothingEyesBase
@@ -32,4 +31,3 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: ShowSecurityIcons

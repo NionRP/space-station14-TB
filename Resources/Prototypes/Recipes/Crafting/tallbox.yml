@@ -10,17 +10,6 @@
   objectType: Structure
 
 - type: construction
-  id: ClosetSteelSecure
-  name: Защищённый шкаф
-  graph: ClosetSteelSecure
-  startNode: start
-  targetNode: done
-  category: construction-category-storage
-  description: Высокий стальной ящик, который можно запереть. Можно настроить доступ с помощью конфигуратора доступов.
-  icon: { sprite: Structures/Storage/closet.rsi, state: secure_icon }
-  objectType: Structure
-
-- type: construction
   id: ClosetWall
   name: Настенный шкаф
   graph: ClosetWall

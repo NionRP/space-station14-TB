@@ -164,3 +164,27 @@
     revertOnDeath: true
     revertOnCrit: true
     duration: 20
+
+- type: polymorph
+  id: AliceMorph
+  configuration:
+    entity: Alice
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+
+- type: polymorph
+  id: AliceColorMorph
+  configuration:
+    entity: AliceColor
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+
+- type: polymorph
+  id: AliceMonsterMorph
+  configuration:
+    entity: AliceMonster
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer

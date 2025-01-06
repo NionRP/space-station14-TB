@@ -25,14 +25,13 @@
   id: DetectiveGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitDetective
-    back: ClothingBackpackSecurityFilledDetective
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSunglasses
-    head: ClothingHeadHatFedoraBrown
-    outerClothing: ClothingOuterVestDetective
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsWinterSyndicate
+    eyes: ClothingDSOGlassesDiamond
+    head: USSPSoldierUshanka
+    outerClothing: ClothingOuterCoatDetective
     id: DetectivePDA
-    ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
   innerClothingSkirt: ClothingUniformJumpskirtDetective
-  satchel: ClothingBackpackSatchelSecurityFilledDetective
-  duffelbag: ClothingBackpackDuffelSecurityFilledDetective
+  satchel: ClothingBackpackSatchelLeather
+  duffelbag: ClothingBackpackSatchelLeather

@@ -8,26 +8,3 @@
   description: Поистине гениальный источник силы.
   icon: { sprite: Objects/Power/power_cells.rsi, state: potato }
   objectType: Item
-
-- type: construction
-  name: Картофельный ИИ
-  id: PotatoAI
-  graph: PotatoAI
-  startNode: start
-  targetNode: potatoai
-  category: construction-category-misc
-  description: Высокотехнологичное устройство, способное к общению. На самом деле это просто картошка, которую вы заставили стать разумной.
-  icon: { sprite: Objects/Fun/pai.rsi, state: icon-potato-off }
-  objectType: Item
-  
-- type: construction
-  name: Суперкомпактный ИИ чип
-  id: PotatoAIChip
-  graph: PotatoAIChip
-  startNode: start
-  targetNode: potatoaichip
-  category: construction-category-misc
-  description: Мастерски(?) созданный ИИ-чип, требующий такого же импровизированного источника питания в 1,1 В.
-  icon: { sprite: Objects/Misc/potatoai_chip.rsi, state: icon }
-  objectType: Item
-  
