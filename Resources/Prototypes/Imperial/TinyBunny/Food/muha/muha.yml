@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseItem
+  id: BaseMuha
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Food/muha.rsi
+  - type: FlavorProfile
+    flavors:
+     - food
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15 # Room for extra condiments
+        reagents:
+        - ReagentId: Amatoxin
+          Quantity: 3
+
+- type: entity
+  parent: BaseMuha
+  id: muha
+  name: Муха
+  description: Это у вас в Эфиопии если потяжелее, то сразу миномёт берут
+  components:
+  - type: Sprite
+    state: muha

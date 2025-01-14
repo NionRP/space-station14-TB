@@ -1,0 +1,21 @@
+- type: entity
+  parent: BaseSign
+  id: CarpetUSSRBase
+  abstract: true
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: Imperial/TinyBunny/Decoration/CarpetsWall.rsi
+
+- type: entity
+  parent: CarpetUSSRBase
+  id: CarpetUSSRWall
+  name: Carpet on the wall
+  suffix: Tiny Bunny
+  description: A heavy woolen carpet decorating the wall is a unique symbol of the era, preserving warmth and memories.
+  components:
+  - type: Sprite
+    state: Carpet
+

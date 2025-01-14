@@ -50,31 +50,6 @@
     access: [["Merc"]]
 
 - type: entity
-  id: USSPlockerSecure
-  parent: LockerBase
-  name: coroner locker
-  description: le morgue.
-  components:
-  - type: Appearance
-  - type: Sprite
-    noRot: true
-    sprite: Imperial/ussp/locker.rsi
-    layers:
-    - state: generic
-      map: ["enum.StorageVisualLayers.Base"]
-    - state: generic_door
-      map: ["enum.StorageVisualLayers.Door"]
-    - state: welded
-      visible: false
-      map: ["enum.WeldableLayers.BaseWelded"]
-  - type: EntityStorageVisuals
-    stateBaseClosed: soldier
-    stateDoorOpen: soldier_open
-    stateDoorClosed: soldier_door
-  - type: AccessReader
-    access: [ [ "Merc" ] ]
-
-- type: entity
   id: USSPStatue
   parent: BaseStructure
   name: Tomb of the Unknown Employee

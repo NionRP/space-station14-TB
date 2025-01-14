@@ -1,0 +1,21 @@
+- type: entity
+  parent: BaseStructureTBDynamic
+  id: TBBaseTrashCache
+  abstract: true
+  name: мусор
+  description: Куча мусора, возможно стоит поискать в ней что-то ещё пригодное к использованию.
+  components:
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable

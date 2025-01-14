@@ -1,0 +1,11 @@
+
+- type: entity
+  parent: BaseItem
+  id: RadioPlayer
+  name: Сломанный кассетный плеер
+  suffix: Tiny Bunny
+  description: Кассетный плеер, представленный в 1983 году. Похоже он сломан, какая печаль.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Mics/MP3.rsi
+    state: base

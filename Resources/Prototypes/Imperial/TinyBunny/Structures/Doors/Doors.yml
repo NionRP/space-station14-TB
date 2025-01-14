@@ -1,0 +1,502 @@
+- type: entity
+  id: StalkerMetalDoor
+  name: металическая дверь
+  parent: BaseMaterialDoor
+  description: Старая металическая дверь.
+  suffix: Tiny Bunny
+  components:
+  - type: Sprite
+    sprite: Imperial\TinyBunny\Structures\Doors\metalgate.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 4000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+
+- type: entity
+  id: MetalDoorTB
+  name: Стальная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная стальная дверь.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/metal/metal.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: MetalRedDoorTB
+  name: Красная стальная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная стальная дверь, окрашена в красный цвет.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/metal/metalred.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: MetalAltDoorTB
+  name: Стальная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная стальная дверь.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/metal/metalalt.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: MetalBarDoorTB
+  name: Решетчатая дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная решетчатая дверь.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/metal/metalbar.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    occludes: false
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Occluder
+    enabled: false
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: FlimsyMetallic
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: MetalGrateDoorTB
+  name: Укрепленная решетчатая дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная решетчатая дверь
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/metal/metalgrate.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Occluder
+    enabled: false
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    occludes: false
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: FlimsyMetallic
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: MetalWindowDoorTB
+  name: Оконная стальная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная стальная дверь, с окном.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/metal/metalwindow.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Occluder
+    enabled: false
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    occludes: false
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: FlimsyMetallic
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: WoodDoorTB
+  name: Деревянная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная деревянная дверь.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/wood/wood.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: WoodWhiteDoorTB
+  name: Белая деревянная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная деревянная дверь, окрашена в белый цвет.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/wood/white.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: WoodGreenDoorTB
+  name: Зелёная деревянная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная деревянная дверь, окрашена в зелёный цвет.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/wood/green.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: WoodRedDoorTB
+  name: Красная деревянная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/wood/red.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    enabled: false
+
+- type: entity
+  id: WoodBlueDoorTB
+  name: Синяя деревянная дверь
+  suffix: Tiny Bunny
+  parent: BaseMaterialDoor
+  description: Обычная деревянная дверь, окрашена в синий цвет.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Doors/wood/blue.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    enabled: false
+
+
+# ГЕРМОДВЕРИ
+
+- type: entity
+  id: HermeticDoor1
+  name: гермодверь
+  parent: BaseMaterialDoor
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Tiny Bunny
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Steels/hermodver_type_one.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+
+- type: entity
+  id: HermeticDoor2
+  name: гермодверь
+  parent: BaseMaterialDoor
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Tiny Bunny
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Steels/hermodver_type_two.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+
+# СТВОРКИ
+
+- type: entity
+  id: Gate
+  name: Створка ворот
+  parent: BaseMaterialDoor
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: Tiny Bunny, левая
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Gate/Gate.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.6
+    openTimeOne: 0.6
+    openTimeTwo: 0.2
+    openSound:
+      path: /Audio/Imperial/TinyBunny/Effects/door_metal_open.ogg
+    closeSound:
+      path: /Audio/Imperial/TinyBunny/Effects/door_metal_close.ogg
+
+
+- type: entity
+  id: Gater
+  name: Створка ворот
+  parent: BaseMaterialDoor
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: Tiny Bunny, правая
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Gate/Gater.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.6
+    openTimeOne: 0.6
+    openTimeTwo: 0.2
+    openSound:
+      path: /Audio/Imperial/TinyBunny/Effects/door_metal_open.ogg
+    closeSound:
+      path: /Audio/Imperial/TinyBunny/Effects/door_metal_close.ogg
+
+- type: entity
+  id: GateFixed
+  name: Створка ворот
+  parent: BaseStructure
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: Tiny Bunny
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Imperial/TinyBunny/Structures/Doors/Gate/Gate.rsi
+      layers:
+        - state: closed
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49"
+          density: 100
+          mask:
+          - FullTileMask
+          layer:
+          - AirlockLayer
+
+- type: entity
+  id: GaterFixed
+  name: Створка ворот
+  parent: GateFixed
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: Tiny Bunny
+  components:
+    - type: Sprite
+      layers:
+        - state: closed
+          map: ["enum.DoorVisualLayers.Base"]
+
+- type: entity
+  id: DoorTB
+  name: Ворота
+  parent: BaseMaterialDoor
+  description: Проезд в стене или ограде, запираемый створами.
+  suffix: Tiny Bunny
+  components:
+  - type: Occluder
+    boundingBox: "-1.5,-0.5,1.5,0.5"
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Doors/Steels/military_door.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-0.5,1.4,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer

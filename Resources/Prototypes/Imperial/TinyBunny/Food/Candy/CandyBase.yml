@@ -1,0 +1,22 @@
+- type: entity
+  parent: FoodBase
+  id: CandyBase
+  abstract: true
+  components:
+  - type: Food
+  - type: Tag
+    tags:
+      - FoodSnack
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Food/Candy.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30 # Room for extra condiments
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: Item
+    sprite: Imperial/TinyBunny/Food/Candy.rsi
+    heldPrefix: packet
+    size: Tiny

@@ -188,3 +188,51 @@
     transferName: true
     transferHumanoidAppearance: true
     inventory: Transfer
+
+- type: polymorph
+  id: WolchokMorph
+  configuration:
+    entity: Wolchok
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+
+- type: polymorph
+  id: WolchokColorMorph
+  configuration:
+    entity: WolchokColor
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+
+- type: polymorph
+  id: WolchokMonsterMorph
+  configuration:
+    entity: WolchokMonster
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+
+- type: polymorph
+  id: MedvedMorph
+  configuration:
+    entity: Medved
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+
+- type: polymorph
+  id: MedvedColorMorph
+  configuration:
+    entity: MedvedColor
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer
+
+- type: polymorph
+  id: MedvedMonsterMorph
+  configuration:
+    entity: MedvedMonster
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: Transfer

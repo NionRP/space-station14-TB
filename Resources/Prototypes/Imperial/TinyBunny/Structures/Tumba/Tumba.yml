@@ -1,0 +1,48 @@
+- type: entity
+  id: tumba
+  parent: BaseStructure
+  name: tumba
+  suffix: Tiny Bunny
+  description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Tumba.rsi
+    state: tumba
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,6,3
+    maxItemSize: Normal
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Anchorable
+  - type: Rotatable
+  - type: Construction
+    graph: Dresser
+    node: dresser

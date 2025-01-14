@@ -231,7 +231,7 @@
     - type: Hands
     - type: MovementSpeedModifier
       baseWalkSpeed : 4.5
-      baseSprintSpeed : 6.5
+      baseSprintSpeed : 5.5
     - type: Body
       prototype: Human
     - type: NoSlip
@@ -432,6 +432,7 @@
         - SimpleHostile
     - type: Sprite
       drawdepth: Mobs
+      scale: 1.2, 1.2
       layers:
       - map: ["enum.DamageStateVisualLayers.Base"]
         sprite: Imperial/TinyBunny/Mobs/Wolchok/WolchokMonster.rsi
@@ -483,7 +484,7 @@
     - type: Hands
     - type: MovementSpeedModifier
       baseWalkSpeed : 4.5
-      baseSprintSpeed : 6.5
+      baseSprintSpeed : 5.5
     - type: Body
       prototype: Human
     - type: NoSlip
@@ -555,8 +556,7 @@
         path: /Audio/Effects/woodhit.ogg
       damage:
         types:
-          Bloodloss: 10
-          Slash: 10
+          Blunt: 20
           Structural: 35
     - type: Tag
       tags:
@@ -639,8 +639,7 @@
         path: /Audio/Effects/woodhit.ogg
       damage:
         types:
-          Bloodloss: 10
-          Slash: 10
+          Blunt: 20
           Structural: 35
     - type: Tag
       tags:
@@ -684,6 +683,7 @@
         - SimpleHostile
     - type: Sprite
       drawdepth: Mobs
+      scale: 1.2, 1.2
       layers:
       - map: ["enum.DamageStateVisualLayers.Base"]
         sprite: Imperial/TinyBunny/Mobs/Medved/MedvedMonster.rsi
@@ -723,9 +723,8 @@
         path: /Audio/Effects/woodhit.ogg
       damage:
         types:
-          Bloodloss: 20
-          Slash: 20
-          Structural: 35
+          Blunt: 45
+          Structural: 55
     - type: Tag
       tags:
         - DoorBumpOpener
@@ -735,7 +734,7 @@
     - type: Hands
     - type: MovementSpeedModifier
       baseWalkSpeed : 4.5
-      baseSprintSpeed : 6.5
+      baseSprintSpeed : 5
     - type: Body
       prototype: Human
     - type: NoSlip

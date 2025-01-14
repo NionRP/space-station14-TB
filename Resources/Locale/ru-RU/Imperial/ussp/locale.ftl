@@ -16,7 +16,7 @@ ent-USSPBeltAssault= Тактический пояс
     .suffix=СССП
 
 ent-USSPGlassesWar= Боевые очки
-    .desc= Очки , защищающие от вспышек и сварки . Здесь должно было быть ночное зрение 
+    .desc= Очки , защищающие от вспышек и сварки . Здесь должно было быть ночное зрение
     .suffix=СССП
 
 ent-USSPArmbandRed= Красная наручная повязка
@@ -188,45 +188,59 @@ ent-USSPSTAMP= Печать СССП
     .suffix=СССП, НЕ МАППИТЬ
 
 ent-USSPSoldierSpawnRole=Солдат СССП
+    .desc=Роль
     .suffix=Роль ,СССП
 
 ent-USSPSoldierSpawnNoRole=Солдат СССП
+    .desc=Роль
     .suffix=Не Роль ,СССП
 
 ent-USSPSoldierSergeantSpawnRole=Cолдат-сержант СССП
+    .desc=Роль
     .suffix=Роль ,СССП
 
 ent-USSPSoldierSergeantSpawnNoRole=Солдат-сержант СССП
+    .desc=Роль
     .suffix=Не Роль ,СССП
 
 ent-USSPStormSpawnRole=Шторм СССП
+    .desc=Роль
     .suffix=Роль ,СССП
 
 ent-USSPStormSpawnNoRole=Шторм СССП
+    .desc=Роль
     .suffix=Не Роль ,СССП
 
 ent-USSPStormSergeantSpawnRole=Шторм-серж СССП
+    .desc=Роль
     .suffix=Роль ,СССП
 
 ent-USSPStormSergeantSpawnNoRole=Шторм-серж СССП
+    .desc=Роль
     .suffix=Не Роль ,СССП
 
 ent-USSPOcupcomSpawnRole=Окупком СССП
+    .desc=Роль
     .suffix=Роль ,СССП
 
 ent-USSPOcupcomSpawnNoRole=Окупком СССП
+    .desc=Роль
     .suffix=Не роль ,СССП
 
 ent-USSPGuardSpawnRole=Гвардеец СССП
+    .desc=Роль
     .suffix=Роль ,СССП
 
 ent-USSPGuardSpawnNoRole=Гвардеец СССП
+    .desc=Роль
     .suffix=Не роль ,СССП
 
 ent-USSPAgitcomSpawnRole=Агитком СССП
+    .desc=Роль
     .suffix=Роль ,СССП
 
 ent-USSPAgitcomSpawnNoRole=Агитком СССП
+    .desc=Роль
     .suffix=Не Роль ,СССП
 
 USSP-SOLDIER-ROLE-NAME=Солдат СССП
@@ -279,7 +293,7 @@ ent-USSPppshMAG=Барабанный магазин ППШ
     .suffix=СССП, магазин, база
 
 ent-USSPweaponRPK=Ручной пулемёт Калашникова
-    .desc=советский ручной пулемёт, созданный на основе автомата АКМ. Принят на вооружение советской армии в 1961 году. Он заменил ручной пулемёт Дегтярёва как более предпочтительный с точки зрения унификации с другим принятым на вооружение стрелковым оружием. 
+    .desc=советский ручной пулемёт, созданный на основе автомата АКМ. Принят на вооружение советской армии в 1961 году. Он заменил ручной пулемёт Дегтярёва как более предпочтительный с точки зрения унификации с другим принятым на вооружение стрелковым оружием.
     .suffix=СССП, шторм, орел, орёл
 
 ent-USSPRPKMAG=Барабанный магазин РПК
@@ -314,9 +328,11 @@ USSP-OFFICER-ROLE-NAME=Офицер КГБ
 USSP-OFFICER-ROLE-DESC=Завербуйте указанное командованием число людей в КГБ и выдайте им задания
 
 ent-USSPofficerSpawnRole=Офицер КГБ
+    .desc=Роль
     .suffix=СССП, Роль
 
 ent-USSPofficerSpawnNoRole=Офицер КГБ
+    .desc=Роль
     .suffix=СССП, Не Роль
 
 ent-USSPHardsuitRedHelmet=Бронешлем "Маркс"

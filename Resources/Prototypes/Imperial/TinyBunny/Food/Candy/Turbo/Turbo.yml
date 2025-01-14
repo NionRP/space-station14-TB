@@ -1,0 +1,160 @@
+- type: entity
+  name: Chewing gum Turbo
+  parent: CandyBase
+  id: FoodCandyTurbo1
+  suffix: Tiny Bunny
+  description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fortunecookie
+  - type: Sprite
+    scale: 0.6, 0.6
+    state: turbo1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Item
+    sprite: Objects/Consumable/Food/snacks.rsi
+    heldPrefix: packet
+    size: Tiny
+  - type: Food
+    trash: FoodTurbo1
+
+- type: entity
+  name: Chewing gum Turbo
+  parent: CandyBase
+  id: FoodCandyTurbo2
+  suffix: Tiny Bunny
+  description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fortunecookie
+  - type: Sprite
+    scale: 0.6, 0.6
+    state: turbo2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Item
+    sprite: Objects/Consumable/Food/snacks.rsi
+    heldPrefix: packet
+    size: Tiny
+  - type: Food
+    trash: FoodTurbo2
+
+- type: entity
+  name: Chewing gum Turbo
+  parent: CandyBase
+  id: FoodCandyTurbo3
+  suffix: Tiny Bunny
+  description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fortunecookie
+  - type: Sprite
+    scale: 0.6, 0.6
+    state: turbo3
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Item
+    sprite: Objects/Consumable/Food/snacks.rsi
+    heldPrefix: packet
+    size: Tiny
+  - type: Food
+    trash: FoodTurbo1
+
+- type: entity
+  name: Chewing gum Turbo
+  parent: CandyBase
+  id: FoodCandyTurbo4
+  suffix: Tiny Bunny
+  description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fortunecookie
+  - type: Sprite
+    scale: 0.6, 0.6
+    state: turbo4
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Item
+    sprite: Objects/Consumable/Food/snacks.rsi
+    heldPrefix: packet
+    size: Tiny
+  - type: Food
+    trash: FoodTurbo2
+
+- type: entity
+  name: Chewing gum Turbo
+  parent: CandyBase
+  id: FoodCandyTurbo5
+  suffix: Tiny Bunny
+  description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fortunecookie
+  - type: Sprite
+    scale: 0.6, 0.6
+    state: turbo5
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Item
+    sprite: Objects/Consumable/Food/snacks.rsi
+    heldPrefix: packet
+    size: Tiny
+  - type: Food
+    trash: FoodTurbo1
+
+- type: entity
+  noSpawn: true
+  parent: CandyBase
+  id: FoodTurbo1
+  name: A chewing gum insert
+  suffix: Tiny Bunny
+  description: A small leaflet with a color picture on a specific topic, which is inserted into a package of chewing gum. What luck! This is the rarest insert in the entire collection.
+  components:
+  - type: Sprite
+    scale: 0.5, 0.5
+    state: turboB1
+  - type: Item
+
+- type: entity
+  noSpawn: true
+  parent: CandyBase
+  id: FoodTurbo2
+  name: A chewing gum insert
+  suffix: Tiny Bunny
+  description: A small leaflet with a color picture on a specific topic, which is inserted into a package of chewing gum. What luck! This is the rarest insert in the entire collection.
+  components:
+  - type: Sprite
+    scale: 0.5, 0.5
+    state: turboB2
+  - type: Item

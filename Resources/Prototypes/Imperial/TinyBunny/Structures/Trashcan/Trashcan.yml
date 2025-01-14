@@ -1,0 +1,78 @@
+- type: entity
+  parent: TBBaseTrashCache
+  id: TBTrashcanStorageFill
+  name: мусор
+  abstract: true
+  suffix: Tiny Bunny
+  components:
+    - type: StorageFill
+      contents:
+        - id: BeefCanDeadSector
+          prob: 0.15
+        - id: BeefCanDeadSectorTrash
+          prob: 0.3
+        - id: SardinesCanDeadSector
+          prob: 0.15
+        - id: SardinesCanDeadSectorTrash
+          prob: 0.3
+        - id: FoodTinMRE
+          prob: 0.15
+        - id: FoodTinMRETrash
+          prob: 0.3
+        - id: PorkCanDeadSector
+          prob: 0.15
+        - id: PorkCanDeadSectorTrash
+          prob: 0.3
+        - id: TomatoCanDeadSector
+          prob: 0.15
+        - id: TomatoCanDeadSectorTrash
+          prob: 0.3
+        - id: OldMeatCanDeadSector
+          prob: 0.15
+        - id: OldMeatCanDeadSectorTrash
+          prob: 0.3
+        - id: MeatCanDeadSector
+          prob: 0.15
+        - id: MeatCanDeadSectorTrash
+          prob: 0.3
+        - id: CigaretteSpent
+          prob: 0.3
+        - id: FoodPlateSmallTrash
+          prob: 0.3
+
+- type: entity
+  parent: [TBBaseTrashCache, TBTrashcanStorageFill]
+  id: TBTrashcan1Cache
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: Imperial/TinyBunny/Structures/Trashcan.rsi
+      state: tc1
+
+- type: entity
+  parent: [TBBaseTrashCache, TBTrashcanStorageFill]
+  id: TBTrashcan2Cache
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: Imperial/TinyBunny/Structures/Trashcan.rsi
+      state: tc2
+
+- type: entity
+  parent: [TBBaseTrashCache, TBTrashcanStorageFill]
+  id: TBTrashcan3Cache
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: Imperial/TinyBunny/Structures/Trashcan.rsi
+      state: tc3
+
+- type: entity
+  parent: [TBBaseTrashCache, TBTrashcanStorageFill]
+  id: TBTrashcan4Cache
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: Imperial/TinyBunny/Structures/Trashcan.rsi
+      state: tc4
+

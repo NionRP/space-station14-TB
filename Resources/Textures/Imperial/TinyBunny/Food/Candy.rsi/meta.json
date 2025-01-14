@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By NionRP",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "turbo1"
+    },
+    {
+      "name": "turbo2"
+    },
+    {
+      "name": "turbo3"
+    },
+    {
+      "name": "turbo4"
+    },
+    {
+      "name": "turbo5"
+    },
+    {
+      "name": "turboB1"
+    },
+    {
+      "name": "turboB2"
+    }
+  ]
+}

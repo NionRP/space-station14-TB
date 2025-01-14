@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseSign
+  id: SchoolBoardBase
+  abstract: true
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: Imperial/TinyBunny/Decoration/SchoolBoard.rsi
+
+- type: entity
+  parent: SchoolBoardBase
+  id: SchoolBoard1
+  name: SchoolBoard
+  suffix: Tiny Bunny
+  description: He'll go to the board...
+  components:
+  - type: Sprite
+    state: SchoolBoard1
+
+- type: entity
+  parent: SchoolBoardBase
+  id: SchoolBoard2
+  name: SchoolBoard
+  suffix: Tiny Bunny
+  description: He'll go to the board...
+  components:
+  - type: Sprite
+    state: SchoolBoard2

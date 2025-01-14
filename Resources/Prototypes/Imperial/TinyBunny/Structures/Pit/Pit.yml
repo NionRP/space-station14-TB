@@ -1,0 +1,33 @@
+- type: entity
+  id: Pit
+  parent: BaseStructure
+  name: Колодец
+  suffix: Tiny Bunny
+  description: Глубокая шахта опускающаяся на многие метры вниз, до самых грунтовых вод.
+  components:
+  - type: Sprite
+    sprite: Imperial\TinyBunny\Structures\Pit.rsi
+    state: Pit
+  - type: InteractionOutline
+  - type: Physics
+  - type: Clickable
+  - type: SolutionContainerManager
+    solutions:
+      pool:
+        maxVol: 300
+        reagents:
+        - ReagentId: Water
+          Quantity: 300
+  - type: DrainableSolution
+    solution: pool
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.390625,-0.453125,0.390625,0.453125"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer

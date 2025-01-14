@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "by CORVAX STALKER",
+    "size": {
+        "x": 96,
+        "y": 96
+    },
+    "states": [
+		{
+			"name": "Carpet_USSR_96_1",
+            "directions": 4
+		},
+        {
+            "name": "Carpet_stage_USSR_96_1"
+        },
+        {
+			"name": "Carpet_USSR_96_2",
+            "directions": 4
+		},
+        {
+            "name": "Carpet_stage_USSR_96_2"
+        },
+        {
+			"name": "Carpet_USSR_96_3",
+            "directions": 4
+		},
+        {
+            "name": "Carpet_stage_USSR_96_3"
+        }
+    ]
+}
