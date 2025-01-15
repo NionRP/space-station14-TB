@@ -1,0 +1,435 @@
+- type: entity
+  id: TBBaseTree
+  description: Yep, it's a tree.
+  parent: BaseTree
+  suffix: Tiny Bunny, Tree
+  categories: [ HideSpawnMenu ]
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    drawdepth: Overdoors
+    offset: 0,0.9
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: TBBaseTree
+  id: TBBaseTreeLarge
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    offset: 0,1.55
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.18,-0.35,0.18,0.35"
+        density: 2000
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: TBBaseTree
+  id: BirchTreeNew01
+  suffix: Tiny Bunny, Tree
+  name: Берёза
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_tree_new.rsi
+    state: birch05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT2:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: BaseTree
+  id: PineTreeNew01
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_tree_new.rsi
+    state: pine01
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT1:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew02
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_tree_new.rsi
+    state: pine02
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew03
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_tree_new.rsi
+    state: pine03
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew04
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_tree_new.rsi
+    state: pine04
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew05
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_tree_new.rsi
+    state: pine05
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew06
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_tree_new.rsi
+    state: pine06
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BaseTreeTB
+  suffix: Tiny Bunny, Tree
+  name: Берёза
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: birch01
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree01
+  suffix: Tiny Bunny, Tree
+  name: Берёза
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: birch01
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree02
+  suffix: Tiny Bunny, Tree
+  name: Берёза
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: birch02
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree03
+  suffix: Tiny Bunny, Tree
+  name: Берёза
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: birch03
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree04
+  suffix: Tiny Bunny, Tree
+  name: Берёза
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: birch04
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTree01
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: pine01
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTree02
+  suffix: Tiny Bunny, Tree
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: pine02
+
+- type: entity
+  parent: BaseTree
+  id: PoplarTree01
+  suffix: Tiny Bunny, Tree
+  name: Тополь
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: poplar01
+
+- type: entity
+  parent: BaseTree
+  id: PoplarTree02
+  suffix: Tiny Bunny, Tree
+  name: Тополь
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_trees.rsi
+    state: poplar02
+
+- type: entity
+  id: Bush01
+  suffix: Tiny Bunny, Tree
+  name: Куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        layer:
+        - MidImpassable
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.8
+    sprintSpeedModifier: 0.5
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora.rsi
+    state: bush01
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: Bush01
+  id: Bush02
+  suffix: Tiny Bunny, Tree
+  name: Куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora.rsi
+    state: bush02
+
+- type: entity
+  parent: Bush01
+  id: peny
+  suffix: Tiny Bunny, Tree
+  name: Пень
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora.rsi
+    state: pen
+
+- type: entity
+  parent: Bush01
+  id: pen2
+  suffix: Tiny Bunny, Tree
+  name: Пень
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora.rsi
+    state: pen2
+
+- type: entity
+  id: BaseRockTB
+  suffix: Tiny Bunny, Rock
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Imperial/TinyBunny/Decoration/Flora/flora_rockssolid.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 6500
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: BaseRockTB
+  id: FloraRockSolid01TB
+  name: Камень
+  components:
+  - type: Sprite
+    state: rocksolid01
+
+- type: entity
+  parent: BaseRockTB
+  id: FloraRockSolid02TB
+  name: Камень
+  components:
+  - type: Sprite
+    state: rocksolid02
+
+- type: entity
+  parent: BaseRockTB
+  id: FloraRockSolid03TB
+  name: Камень
+  components:
+  - type: Sprite
+    state: rocksolid03

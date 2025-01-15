@@ -3,7 +3,7 @@
   parent: BaseItem
   id: RadioPlayer
   name: Сломанный кассетный плеер
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Decor
   description: Кассетный плеер, представленный в 1983 году. Похоже он сломан, какая печаль.
   components:
   - type: Sprite

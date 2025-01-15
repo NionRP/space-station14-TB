@@ -1,0 +1,73 @@
+- type: entity
+  id: Powerlines1
+  parent: TBBaseTreeLarge
+  name: ЛЭП
+  suffix: Tiny Bunny, Powerlines
+  description: Один из компонентов электрической сети, система энергетического оборудования, предназначенная для передачи электроэнергии посредством электрического тока.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/powerlines.rsi
+    state: lep1
+
+- type: entity
+  name: ЛЭП
+  parent: Powerlines1
+  id: Powerlines2
+  suffix: Tiny Bunny, Powerlines
+  components:
+  - type: Sprite
+    state: lep2
+
+- type: entity
+  name: ЛЭП
+  parent: Powerlines1
+  id: Powerlines3
+  suffix: Tiny Bunny, Powerlines
+  components:
+  - type: Sprite
+    state: lep3
+
+- type: entity
+  name: ЛЭП
+  parent: Powerlines1
+  id: Powerlines4
+  suffix: Tiny Bunny, Powerlines
+  components:
+  - type: Sprite
+    state: lep4
+
+- type: entity
+  name: ЛЭП
+  parent: Powerlines1
+  id: Powerlines5
+  suffix: Tiny Bunny, Powerlines
+  components:
+  - type: Sprite
+    state: lep5
+
+- type: entity
+  name: ЛЭП
+  parent: Powerlines1
+  id: Powerlines6
+  suffix: Tiny Bunny, Powerlines
+  components:
+  - type: Sprite
+    state: lep6
+
+- type: entity
+  name: ЛЭП
+  parent: Powerlines1
+  id: Powerlines7
+  suffix: Tiny Bunny, Powerlines
+  components:
+  - type: Sprite
+    state: lep7
+
+- type: entity
+  name: ЛЭП
+  parent: Powerlines1
+  id: Powerlines8
+  suffix: Tiny Bunny, Powerlines
+  components:
+  - type: Sprite
+    state: lep8

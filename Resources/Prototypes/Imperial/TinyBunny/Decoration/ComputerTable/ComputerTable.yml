@@ -2,7 +2,7 @@
   parent: BaseStructure
   id: ComputerTable
   name: ComputerTable
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Decor
   description: An old wooden table on which a computer stands.
   components:
   - type: Anchorable

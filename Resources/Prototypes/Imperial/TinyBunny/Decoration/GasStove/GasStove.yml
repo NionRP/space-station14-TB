@@ -2,7 +2,7 @@
   parent: BaseStructure
   id: GasStove
   name: Gas stove
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Decor
   description: Soviet gas stove.
   components:
   - type: Anchorable

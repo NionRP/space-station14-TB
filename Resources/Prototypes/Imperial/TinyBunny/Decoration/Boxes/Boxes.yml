@@ -1,0 +1,154 @@
+
+- type: entity
+  parent: BaseStructure
+  id: WoodBoxTB
+  name: Старый деревянный ящик
+  suffix: Tiny Bunny, Box
+  description: Старый деревянный ящик.
+  components:
+  - type: Anchorable
+  - type: InteractionOutline
+  - type: PlaceableSurface
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 2
+    snapCardinals: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 140
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+  - type: Construction
+    graph: CoffeeTableGraph
+    node: CoffeeTableSteel
+
+- type: entity
+  id: WoodenBox2
+  parent: WoodBoxTB
+  name: Деревянный ящик
+  placement:
+    mode: PlaceFree
+  suffix: Tiny Bunny, Box
+  description: Универсальный предмет быта с широким спектром использования. Конструкции и габариты ящиков могут быть различными в зависимости от предназначения – от подарочных декоративных вариантов до изделий для размещения овощей, фруктов и различной домашней утвари. Соответственно, каждый вид имеет свои особенности, позитивные и негативные стороны.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 2
+  - type: InteractionOutline
+
+- type: entity
+  id: WoodenBox1
+  parent: WoodBoxTB
+  name: Ящик
+  suffix: Tiny Bunny, Box
+  description: Универсальный предмет быта с широким спектром использования. Конструкции и габариты коробок могут быть различными в зависимости от предназначения – от подарочных декоративных вариантов до изделий для размещения овощей, фруктов и различной домашней утвари. Соответственно, каждый вид имеет свои особенности, позитивные и негативные стороны.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 1
+  - type: InteractionOutline
+
+- type: entity
+  id: WoodenBox1a2
+  parent: WoodenBox2
+  name: Деревянные ящик
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 1a
+
+- type: entity
+  id: WoodenBox0
+  parent: WoodenBox1
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 0
+
+- type: entity
+  id: WoodenBox3
+  parent: WoodenBox2
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 3
+
+- type: entity
+  id: WoodenBox4
+  parent: WoodenBox2
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 4
+
+- type: entity
+  id: WoodenBox5
+  parent: WoodenBox2
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 5
+
+- type: entity
+  id: WoodenBox6
+  parent: WoodenBox2
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 6
+
+- type: entity
+  id: WoodenBox7
+  parent: WoodenBox2
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 7
+
+- type: entity
+  id: WoodenBox8
+  parent: WoodenBox2
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 8
+
+- type: entity
+  id: WoodenBox9
+  parent: WoodenBox2
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/boxes.rsi
+    state: 9

@@ -13,7 +13,7 @@
   parent: SchoolBoardBase
   id: SchoolBoard1
   name: SchoolBoard
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, School
   description: He'll go to the board...
   components:
   - type: Sprite
@@ -23,7 +23,7 @@
   parent: SchoolBoardBase
   id: SchoolBoard2
   name: SchoolBoard
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, School
   description: He'll go to the board...
   components:
   - type: Sprite

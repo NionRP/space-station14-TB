@@ -2,7 +2,7 @@
   id: ClosetTB1
   parent: BaseStructure
   name: Closet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Decor
   description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
   components:
   - type: Sprite
@@ -51,7 +51,7 @@
   id: ClosetTB2
   parent: BaseStructure
   name: Closet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Decor
   description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
   components:
   - type: Sprite
@@ -100,7 +100,7 @@
   id: ClosetTB3
   parent: BaseStructure
   name: Closet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Decor
   description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
   components:
   - type: Sprite

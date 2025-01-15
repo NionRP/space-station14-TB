@@ -1,7 +1,7 @@
 - type: entity
   id: CarpetUSSR
   name: Soviet carpet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, CarpetsFloor
   description: A lush pile carpet with a traditional pattern that creates coziness and warmth in any interior.
   placement:
     mode: SnapgridCenter
@@ -34,7 +34,7 @@
 - type: entity
   id: CarpetUSSRBig
   name: Soviet carpet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, CarpetsFloor
   description: A lush pile carpet with a traditional pattern that creates coziness and warmth in any interior.
   placement:
     mode: SnapgridCenter
@@ -67,7 +67,7 @@
 - type: entity
   id: CarpetUSSRBig2
   name: Soviet carpet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, CarpetsFloor
   description: A lush pile carpet with a traditional pattern that creates coziness and warmth in any interior.
   placement:
     mode: SnapgridCenter
@@ -100,7 +100,7 @@
 - type: entity
   id: CarpetUSSR961
   name: Soviet carpet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, CarpetsFloor
   description: A lush pile carpet with a traditional pattern that creates coziness and warmth in any interior.
   placement:
     mode: SnapgridCenter
@@ -133,7 +133,7 @@
 - type: entity
   id: CarpetUSSR962
   name: Soviet carpet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, CarpetsFloor
   description: A lush pile carpet with a traditional pattern that creates coziness and warmth in any interior.
   placement:
     mode: SnapgridCenter
@@ -166,7 +166,7 @@
 - type: entity
   id: CarpetUSSR963
   name: Soviet carpet
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, CarpetsFloor
   description: A lush pile carpet with a traditional pattern that creates coziness and warmth in any interior.
   placement:
     mode: SnapgridCenter

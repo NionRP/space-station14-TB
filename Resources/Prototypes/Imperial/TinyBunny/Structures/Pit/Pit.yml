@@ -2,7 +2,7 @@
   id: Pit
   parent: BaseStructure
   name: Колодец
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Water
   description: Глубокая шахта опускающаяся на многие метры вниз, до самых грунтовых вод.
   components:
   - type: Sprite

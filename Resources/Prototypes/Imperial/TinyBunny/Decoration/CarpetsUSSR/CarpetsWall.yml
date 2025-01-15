@@ -13,7 +13,7 @@
   parent: CarpetUSSRBase
   id: CarpetUSSRWall
   name: Carpet on the wall
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, CarpetsWall
   description: A heavy woolen carpet decorating the wall is a unique symbol of the era, preserving warmth and memories.
   components:
   - type: Sprite

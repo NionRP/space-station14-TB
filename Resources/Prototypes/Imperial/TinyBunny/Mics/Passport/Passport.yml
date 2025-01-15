@@ -1,0 +1,39 @@
+- type: entity
+  parent: Clothing
+  id: Passport
+  name: Паспорт
+  description: Паспорт - государственный документ, удостоверяющий личность и гражданство владельца при пересечении границ государств и пребывании за границей.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Mics/Passport.rsi
+    scale: 0.8, 0.8
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: Imperial/TinyBunny/Mics/Passport.rsi
+  - type: Item
+    size: Small
+    heldPrefix: default
+    storedRotation: -90
+  - type: Access
+  - type: IdCard
+  - type: StationRecordKeyStorage
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+  - type: StealTarget
+    stealGroup: IDCard
+
+- type: entity
+  parent: Passport
+  id: PassportRU
+  name: Паспорт РФ
+  suffix: Tiny Bunny
+  components:
+  - type: Sprite
+    layers:
+    - state: russia
+  - type: PresetIdCard
+    job: Passenger

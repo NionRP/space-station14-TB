@@ -3,7 +3,7 @@
   id: TBTrashcanStorageFill
   name: мусор
   abstract: true
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Trash
   components:
     - type: StorageFill
       contents:

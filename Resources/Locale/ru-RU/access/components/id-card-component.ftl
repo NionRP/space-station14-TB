@@ -1,8 +1,8 @@
 ## IdCardComponent
 
-access-id-card-component-owner-name-job-title-text = ID карта{$jobSuffix}
-access-id-card-component-owner-full-name-job-title-text = ID карта{$jobSuffix}: {$fullName}
-access-id-card-component-default = ID карта
+access-id-card-component-owner-name-job-title-text = Паспорт РФ{$jobSuffix}
+access-id-card-component-owner-full-name-job-title-text = Паспорт РФ{$jobSuffix}: {$fullName}
+access-id-card-component-default = Паспорт РФ
 
 id-card-component-microwave-burnt = Микросхемы {$id} громко трещат!
 id-card-component-microwave-bricked = {$id} шипит!

@@ -2,7 +2,7 @@
   id: tumba
   parent: BaseStructure
   name: tumba
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Decor
   description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
   components:
   - type: Sprite
@@ -16,7 +16,6 @@
     - trigger:
         !type:DamageTrigger
         damage: 50
-
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:

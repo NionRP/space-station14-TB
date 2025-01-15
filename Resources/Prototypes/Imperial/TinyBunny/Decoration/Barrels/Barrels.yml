@@ -1,0 +1,74 @@
+- type: entity
+  id: BaseBarrel
+  abstract: true
+  parent: BaseStructureTBDynamic
+  name: Бочка
+  suffix: Tiny Bunny, Barrels
+  description: Большой цилиндрический сосуд для жидкостей с двумя плоскими днищами и несколько выпуклыми стенками, которые стянуты обручами.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: base
+
+- type: entity
+  id: Barrel1
+  parent: BaseBarrel
+
+- type: entity
+  id: Barrel2
+  parent: BaseBarrel
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: blue
+
+- type: entity
+  id: Barrel3
+  parent: BaseBarrel
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: rusted
+
+- type: entity
+  id: Barrel4
+  parent: BaseBarrel
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: explosive
+
+- type: entity
+  id: BarrelWooden1
+  name: Деревянная бочка
+  suffix: Tiny Bunny
+  parent: BaseBarrel
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: wooden
+
+- type: entity
+  id: BarrelWooden2
+  parent: BarrelWooden1
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: wooden2
+- type: entity
+  id: BarrelWooden3
+  parent: BarrelWooden1
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: wooden3
+
+- type: entity
+  id: BarrelWooden4
+  parent: BarrelWooden1
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/barrels.rsi
+    state: wooden4

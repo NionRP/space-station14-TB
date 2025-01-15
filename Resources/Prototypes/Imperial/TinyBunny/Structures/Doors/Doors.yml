@@ -3,7 +3,7 @@
   name: металическая дверь
   parent: BaseMaterialDoor
   description: Старая металическая дверь.
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   components:
   - type: Sprite
     sprite: Imperial\TinyBunny\Structures\Doors\metalgate.rsi
@@ -25,7 +25,7 @@
 - type: entity
   id: MetalDoorTB
   name: Стальная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная стальная дверь.
   components:
@@ -65,7 +65,7 @@
 - type: entity
   id: MetalRedDoorTB
   name: Красная стальная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная стальная дверь, окрашена в красный цвет.
   components:
@@ -94,7 +94,7 @@
 - type: entity
   id: MetalAltDoorTB
   name: Стальная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная стальная дверь.
   components:
@@ -123,7 +123,7 @@
 - type: entity
   id: MetalBarDoorTB
   name: Решетчатая дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная решетчатая дверь.
   components:
@@ -155,7 +155,7 @@
 - type: entity
   id: MetalGrateDoorTB
   name: Укрепленная решетчатая дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная решетчатая дверь
   components:
@@ -187,7 +187,7 @@
 - type: entity
   id: MetalWindowDoorTB
   name: Оконная стальная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная стальная дверь, с окном.
   components:
@@ -219,7 +219,7 @@
 - type: entity
   id: WoodDoorTB
   name: Деревянная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная деревянная дверь.
   components:
@@ -248,7 +248,7 @@
 - type: entity
   id: WoodWhiteDoorTB
   name: Белая деревянная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в белый цвет.
   components:
@@ -277,7 +277,7 @@
 - type: entity
   id: WoodGreenDoorTB
   name: Зелёная деревянная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в зелёный цвет.
   components:
@@ -306,7 +306,7 @@
 - type: entity
   id: WoodRedDoorTB
   name: Красная деревянная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери.
   components:
@@ -335,7 +335,7 @@
 - type: entity
   id: WoodBlueDoorTB
   name: Синяя деревянная дверь
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   parent: BaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в синий цвет.
   components:
@@ -361,15 +361,12 @@
   - type: IconSmooth
     enabled: false
 
-
-# ГЕРМОДВЕРИ
-
 - type: entity
   id: HermeticDoor1
   name: гермодверь
   parent: BaseMaterialDoor
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   components:
   - type: Sprite
     sprite: Imperial/TinyBunny/Structures/Doors/Steels/hermodver_type_one.rsi
@@ -382,7 +379,7 @@
   name: гермодверь
   parent: BaseMaterialDoor
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   components:
   - type: Sprite
     sprite: Imperial/TinyBunny/Structures/Doors/Steels/hermodver_type_two.rsi
@@ -397,7 +394,7 @@
   name: Створка ворот
   parent: BaseMaterialDoor
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Tiny Bunny, левая
+  suffix: Tiny Bunny, левая, Door
   components:
   - type: Sprite
     sprite: Imperial/TinyBunny/Structures/Doors/Gate/Gate.rsi
@@ -422,7 +419,7 @@
   name: Створка ворот
   parent: BaseMaterialDoor
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Tiny Bunny, правая
+  suffix: Tiny Bunny, правая, Door
   components:
   - type: Sprite
     sprite: Imperial/TinyBunny/Structures/Doors/Gate/Gater.rsi
@@ -446,7 +443,7 @@
   name: Створка ворот
   parent: BaseStructure
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   components:
     - type: InteractionOutline
     - type: Sprite
@@ -471,7 +468,7 @@
   name: Створка ворот
   parent: GateFixed
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   components:
     - type: Sprite
       layers:
@@ -483,7 +480,7 @@
   name: Ворота
   parent: BaseMaterialDoor
   description: Проезд в стене или ограде, запираемый створами.
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Door
   components:
   - type: Occluder
     boundingBox: "-1.5,-0.5,1.5,0.5"

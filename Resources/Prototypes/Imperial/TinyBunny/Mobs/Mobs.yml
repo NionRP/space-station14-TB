@@ -1,7 +1,7 @@
 - type: entity
   name: Fox
   id: Alice
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Mysterious girl in a fox mask
   components:
@@ -85,7 +85,7 @@
 - type: entity
   name: Alice
   id: AliceColor
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Alice is a cunning rogue. Do you trust her?
   components:
@@ -169,7 +169,7 @@
 - type: entity
   name: Alice
   id: AliceMonster
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Why are you running away, bunny.....
   components:
@@ -253,7 +253,7 @@
 - type: entity
   name: Wolf
   id: Wolchok
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Mysterious girl in a fox mask
   components:
@@ -337,7 +337,7 @@
 - type: entity
   name: Wolchok
   id: WolchokColor
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Alice is a cunning rogue. Do you trust her?
   components:
@@ -421,7 +421,7 @@
 - type: entity
   name: Wolchok
   id: WolchokMonster
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Why are you running away, bunny.....
   components:
@@ -506,7 +506,7 @@
 - type: entity
   name: Bear
   id: Medved
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Mysterious girl in a fox mask
   components:
@@ -589,7 +589,7 @@
 - type: entity
   name: Medved
   id: MedvedColor
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Alice is a cunning rogue. Do you trust her?
   components:
@@ -672,7 +672,7 @@
 - type: entity
   name: Medved
   id: MedvedMonster
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Mob
   parent: [ SimpleSpaceMobBase, MobCombat ]
   description: Why are you running away, bunny.....
   components:

@@ -2,7 +2,7 @@
   name: Chewing gum Turbo
   parent: CandyBase
   id: FoodCandyTurbo1
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Food
   description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
   components:
   - type: FlavorProfile
@@ -29,7 +29,7 @@
   name: Chewing gum Turbo
   parent: CandyBase
   id: FoodCandyTurbo2
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Food
   description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
   components:
   - type: FlavorProfile
@@ -56,7 +56,7 @@
   name: Chewing gum Turbo
   parent: CandyBase
   id: FoodCandyTurbo3
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Food
   description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
   components:
   - type: FlavorProfile
@@ -83,7 +83,7 @@
   name: Chewing gum Turbo
   parent: CandyBase
   id: FoodCandyTurbo4
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Food
   description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
   components:
   - type: FlavorProfile
@@ -110,7 +110,7 @@
   name: Chewing gum Turbo
   parent: CandyBase
   id: FoodCandyTurbo5
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Food
   description: Turbo is a peach- or fruit-flavored chewing gum produced by the Turkish company Kent Gida, containing inserts with photographs, usually of cars or motorcycles.
   components:
   - type: FlavorProfile
@@ -138,7 +138,7 @@
   parent: CandyBase
   id: FoodTurbo1
   name: A chewing gum insert
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Food
   description: A small leaflet with a color picture on a specific topic, which is inserted into a package of chewing gum. What luck! This is the rarest insert in the entire collection.
   components:
   - type: Sprite
@@ -151,7 +151,7 @@
   parent: CandyBase
   id: FoodTurbo2
   name: A chewing gum insert
-  suffix: Tiny Bunny
+  suffix: Tiny Bunny, Food
   description: A small leaflet with a color picture on a specific topic, which is inserted into a package of chewing gum. What luck! This is the rarest insert in the entire collection.
   components:
   - type: Sprite
