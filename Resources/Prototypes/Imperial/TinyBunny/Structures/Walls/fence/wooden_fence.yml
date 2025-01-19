@@ -2,7 +2,8 @@
 - type: entity
   parent: BaseStructure
   id: BaseFenceWooden
-  name: деревянный забор
+  name: Деревянный забор
+  suffix: Tiny Bunny, Wall
   description: Старый деревянный забор - доски да гвозди
   abstract: true
   components:
@@ -22,8 +23,8 @@
 - type: entity
   parent: BaseFenceWooden
   id: FenceWoodenBroken
-  name: сломанный деревянный забор
-  suffix: Tiny Bunny, PN
+  name: Сломанный деревянный забор
+  suffix: Tiny Bunny, Wall
   description: Старый деревянный забор - доски да гвозди. Интересно, кто же умудрился его сломать?
   components:
   - type: Sprite
@@ -70,7 +71,7 @@
 - type: entity
   parent: BaseFenceWooden
   id: FenceWoodenStraight
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Icon
     sprite: Imperial/TinyBunny/Structures/Walls/zabor_wooden.rsi
@@ -93,7 +94,7 @@
 - type: entity
   parent: BaseFenceWooden
   id: FenceWoodenCorner
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Sprite
     layers:
@@ -120,3 +121,5 @@
         - FullTileMask
         layer:
         - WallLayer
+
+# By Poeno

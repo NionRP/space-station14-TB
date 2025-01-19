@@ -3,7 +3,8 @@
 - type: entity
   parent: BaseStructure
   id: BaseFenceBeton
-  name: железобетонный забор
+  name: Железобетонный забор
+  suffix: Tiny Bunny, Wall
   description: Забор, выполненный из бетонных блоков или панелей, соединенных между собой специальными креплениями.
   abstract: true
   components:
@@ -35,7 +36,7 @@
   parent: BaseFenceBeton
   id: FenceBetonBroken
   name: сломанный железобетонный забор
-  suffix: ST, Mapping
+  suffix: Tiny Bunny, Wall
   description: Забор, выполненный из бетонных блоков или панелей, соединенных между собой специальными креплениями. Интересно, кто же умудрился его сломать?
   components:
   - type: Sprite
@@ -87,7 +88,7 @@
 - type: entity
   parent: BaseFenceBeton
   id: FenceBetonStraight
-  suffix: ST, Mapping, straight
+  suffix: Tiny Bunny, Wall, straight
   components:
   - type: Occluder
     boundingBox: "-0.10,-0.5,0.10,0.5"
@@ -117,7 +118,7 @@
 - type: entity
   parent: BaseFenceBeton
   id: FenceBetonCorner
-  suffix: ST, Mapping, corner
+  suffix: Tiny Bunny, Wall, corner
   components:
   - type: Occluder
     boundingBox: "-0.1,-0.1,0.1,0.5"
@@ -155,7 +156,7 @@
 - type: entity
   parent: BaseFenceBeton
   id: FenceBetonEnd
-  suffix: ST, Mapping, end
+  suffix: Tiny Bunny, Wall, end
   components:
   - type: Icon
     sprite: Imperial/TinyBunny/Structures/Walls/zabor.rsi
@@ -181,3 +182,5 @@
     messagePerceivedByOthers: comp-fence-knock
     interactSuccessSound:
       collection: FenceStalker
+
+# By Poeno
