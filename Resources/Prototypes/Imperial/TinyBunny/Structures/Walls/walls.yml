@@ -1,0 +1,398 @@
+- type: entity
+  parent: BaseWall
+  id: WallWoodFallout
+  name: Деревянная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/wood.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/wood.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    key: walls
+    base: wood
+
+- type: entity
+  parent: BaseWall
+  id: WallSidingFallout
+  name: ПВХ стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/siding.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/siding.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    key: walls
+    base: siding
+
+- type: entity
+  parent: BaseWall
+  id: WallBrickFallout
+  name: Кирпичная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/brick.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/brick.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: FlimsyMetallic
+  - type: IconSmooth
+    key: walls
+    base: brick
+
+- type: entity
+  parent: BaseWall
+  id: WallBunkerFallout
+  name: Бункерная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/bunker.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/bunker.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+  - type: IconSmooth
+    key: walls
+    base: bunker
+
+- type: entity
+  parent: BaseWall
+  id: WallDungeonFallout
+  name: Укрепленная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/dungeon.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/dungeon.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+  - type: IconSmooth
+    key: walls
+    base: dungeon
+
+- type: entity
+  parent: BaseWall
+  id: WallMetalFallout
+  name: Стальная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures\Walls/metal.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures\Walls/metal.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    key: walls
+    base: metal
+
+- type: entity
+  parent: BaseWall
+  id: WallRustMetalFallout
+  name: Ржавая стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/rustmetal.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/rustmetal.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    key: walls
+    base: rustmetal
+
+- type: entity
+  parent: BaseWall
+  id: WallScrapFallout
+  name: Профнастиловая стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/scrap.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/scrap.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    key: walls
+    base: scrap
+
+- type: entity
+  parent: BaseWall
+  id: WallSewerFallout
+  name: Канализационная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/sewer.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/sewer.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    key: walls
+    base: sewer
+
+- type: entity
+  parent: BaseWall
+  id: WallReinfMetalFallout
+  name: Бронированная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/rmetal.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/rmetal.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+  - type: IconSmooth
+    key: walls
+    base: rmetal
+
+- type: entity
+  parent: BaseWall
+  id: WallRustReinfMetalFallout
+  name: Ржавая бронированная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/rrmetal.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/rrmetal.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+  - type: IconSmooth
+    key: walls
+    base: rrmetal
+
+- type: entity
+  parent: BaseWall
+  id: WallVaultFallout
+  name: Стена убежища
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/vault.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/vault.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+  - type: IconSmooth
+    key: walls
+    base: vault
+
+- type: entity
+  parent: BaseWall
+  id: WallConcreteFallout
+  name: Бетонная стена
+  suffix: Tiny Bunny, PN
+  description: Стена, для создания которой устраивается опалубка с железной арматурой внутри, в которую заливается жидкий бетон.
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/concrete.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/concrete.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    key: walls
+    base: concrete
+
+- type: entity
+  parent: BaseWall
+  id: WallRockFallout
+  name: Каменная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/rock.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/rock.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: FlimsyMetallic
+  - type: IconSmooth
+    key: walls
+    base: rock
+
+- type: entity
+  parent: BaseWall
+  id: WallPrisonFallout
+  name: Тюремная стена
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/prison.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/prison.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: IconSmooth
+    key: walls
+    base: prison
+
+- type: entity
+  parent: BaseWall
+  id: WallConcreteFalloutDestructible
+  name: Ветхая бетонная стена
+  description: Вот-вот разрушится, если по ней постучать.
+  suffix: Tiny Bunny, PN
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/concrete.rsi
+  - type: Icon
+    sprite: Imperial/TinyBunny/Structures/Walls/concrete.rsi
+  - type: IconSmooth
+    key: walls
+    base: concrete
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Effects/metal_break1.ogg
+
+- type: entity
+  id: STWallRockBasalt
+  name: basalt
+  parent: BaseWall
+  components:
+    - type: Icon
+      sprite: Structures/Walls/rock.rsi
+      state: rock_wall
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rock_wall
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_wall_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_wall_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_wall_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_wall_west
+
+- type: entity
+  id: WallRockBasaltDestructible
+  suffix: Tiny Bunny, PN
+  name: Хрупкий базальт
+  description: Вот-вот разрушится, если по нему постучать.
+  parent: WallRock
+  components:
+    - type: Sprite
+      sprite: Structures/Walls/rock.rsi
+      layers:
+        - state: rock_wall
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_wall_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_wall_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_wall_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_wall_west
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/Effects/metal_break1.ogg
+
+- type: entity
+  parent: BaseWall
+  id: STWallNecropolis
+  suffix: Tiny Bunny, PN
+  name: стена чистилища
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: Structures/Walls/necropolis.rsi
+  - type: Icon
+    sprite: Structures/Walls/necropolis.rsi
+  - type: IconSmooth
+    key: walls
+    base: necropolis

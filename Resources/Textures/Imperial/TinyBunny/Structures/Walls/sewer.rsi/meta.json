@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Python generated",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "sewer0",
+            "directions": 4
+        },
+        {
+            "name": "sewer1",
+            "directions": 4
+        },
+        {
+            "name": "sewer2",
+            "directions": 4
+        },
+        {
+            "name": "sewer3",
+            "directions": 4
+        },
+        {
+            "name": "sewer4",
+            "directions": 4
+        },
+        {
+            "name": "sewer5",
+            "directions": 4
+        },
+        {
+            "name": "sewer6",
+            "directions": 4
+        },
+        {
+            "name": "sewer7",
+            "directions": 4
+        }
+    ]
+}
