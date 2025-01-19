@@ -1,0 +1,27 @@
+- type: entity
+  id: Planks1
+  parent: BaseStructureDynamic
+  name: Доски
+  suffix: Tiny Bunny, Decor
+  description: Используются в строительстве домов, в мебельной промышленности, производстве тары и др.
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Planks.rsi
+    state: base
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Climbable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-0.4,0.6,0.4"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer

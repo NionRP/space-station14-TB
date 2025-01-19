@@ -12,6 +12,10 @@
       "directions": 4
     },
     {
+        "name": "glow",
+        "directions": 4
+    },
+    {
       "name": "AliceColor_dead"
     }
   ]

@@ -1,0 +1,130 @@
+- type: entity
+  parent: BaseRock
+  id: TBRock02
+  name: валун
+  suffix: Tiny Bunny, Rock
+  description: Крупный окатанный обломок горной породы.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Rocks.rsi
+    state: rock2
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.6
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: TBRock02
+  id: TBRock01
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Rocks.rsi
+    state: rock1
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.8
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: TBRock02
+  id: TBRock03
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Rocks.rsi
+    state: rock3
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.8
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: TBRock02
+  id: TBRock04
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Rocks.rsi
+    state: rock4
+
+- type: entity
+  parent: TBRock02
+  id: TBRock05
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Rocks.rsi
+    state: rock5
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.7
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: TBRock02
+  id: TBRock06
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Rocks.rsi
+    state: rock6
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.7
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic

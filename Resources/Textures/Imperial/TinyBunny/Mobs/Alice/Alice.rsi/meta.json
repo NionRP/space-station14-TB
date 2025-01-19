@@ -12,7 +12,12 @@
       "directions": 4
     },
     {
-      "name": "Alice_dead"
+       "name": "glow",
+       "directions": 4
+    },
+    {
+      "name": "Alice_dead",
+      "directions": 1
     }
   ]
 }

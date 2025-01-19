@@ -1,0 +1,29 @@
+- type: entity
+  id: PlateTB
+  parent: BaseStructureDynamic
+  name: Бетонные плиты
+  suffix: Tiny Bunny, Decor
+  components:
+    - type: Sprite
+      sprite: Imperial/TinyBunny/Decoration/Plate.rsi
+      state: plate1
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 6000
+          mask:
+          - MachineMask
+          layer:
+          - WallLayer
+
+- type: entity
+  id: PlateTB2
+  parent: PlateTB
+  name: Бетонные плиты
+  suffix: Tiny Bunny, Decor
+  components:
+    - type: Sprite
+      state: plate2

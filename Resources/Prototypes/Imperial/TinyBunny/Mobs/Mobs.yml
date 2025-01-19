@@ -11,11 +11,23 @@
       factions:
         - SimpleHostile
     - type: Sprite
+      sprite: Imperial/TinyBunny/Mobs/Alice/Alice.rsi
       drawdepth: Mobs
       layers:
-      - map: ["enum.DamageStateVisualLayers.Base"]
-        sprite: Imperial/TinyBunny/Mobs/Alice/Alice.rsi
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: Alice
+      - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+        state: glow
+        shader: unshaded
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: Alice
+          BaseUnshaded: glow
+        Critical:
+          Base: Alice_die
+        Dead:
+          Base: Alice_die
     - type: CombatMode
     - type: Physics
     - type: Fixtures
@@ -30,14 +42,6 @@
           layer:
           - MobLayer
     - type: MobState
-    - type: DamageStateVisuals
-      states:
-        Alive:
-          Base: Alice
-        Critical:
-          Base: Alice_dead
-        Dead:
-          Base: Alice_dead
     - type: MobThresholds
       thresholds:
         0: Alive
@@ -86,131 +90,53 @@
   name: Alice
   id: AliceColor
   suffix: Tiny Bunny, Mob
-  parent: [ SimpleSpaceMobBase, MobCombat ]
+  parent: Alice
   description: Alice is a cunning rogue. Do you trust her?
   components:
-    - type: InputMover
-    - type: MobMover
-    - type: NpcFactionMember
-      factions:
-        - SimpleHostile
     - type: Sprite
+      sprite: Imperial/TinyBunny/Mobs/Alice/AliceColor.rsi
       drawdepth: Mobs
       layers:
-      - map: ["enum.DamageStateVisualLayers.Base"]
-        sprite: Imperial/TinyBunny/Mobs/Alice/AliceColor.rsi
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: AliceColor
-    - type: CombatMode
-    - type: Physics
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeCircle
-            radius: 0.35
-          density: 250
-          mask:
-          - MobMask
-          layer:
-          - MobLayer
-    - type: MobState
+      - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+        state: glow
+        shader: unshaded
     - type: DamageStateVisuals
       states:
         Alive:
           Base: AliceColor
+          BaseUnshaded: glow
         Critical:
-          Base: AliceColor_dead
+          Base: AliceColor_die
         Dead:
-          Base: AliceColor_dead
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        400: Critical
-        500: Dead
-    - type: MeleeWeapon
-      altDisarm: false
-      angle: 0
-      animation: WeaponArcClaw
-      soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
-      damage:
-        types:
-          Bloodloss: 10
-          Slash: 10
-          Structural: 35
-    - type: Tag
-      tags:
-        - DoorBumpOpener
-        - NoPaint
-    - type: Speech
-      speechSounds: DoctorDefVoice
-    - type: Hands
-    - type: MovementSpeedModifier
-      baseWalkSpeed : 3
-      baseSprintSpeed : 5
-    - type: Body
-      prototype: Human
-    - type: NoSlip
-    - type: Vocal
-      sounds:
-        Male: AliceVoice
-        Unsexed: AliceVoice
-        Female: AliceVoice
-    - type: SlowOnDamage
-      speedModifierThresholds:
-        300: 0.8
-    - type: Access
-      groups:
-      - Captain
-    - type: AutoImplant
-      implants:
-       - StorageImplant
+          Base: AliceColor_die
 
 - type: entity
   name: Alice
   id: AliceMonster
   suffix: Tiny Bunny, Mob
-  parent: [ SimpleSpaceMobBase, MobCombat ]
+  parent: Alice
   description: Why are you running away, bunny.....
   components:
-    - type: InputMover
-    - type: MobMover
-    - type: NpcFactionMember
-      factions:
-        - SimpleHostile
     - type: Sprite
+      sprite: Imperial/TinyBunny/Mobs/Alice/AliceMonster.rsi
       drawdepth: Mobs
       layers:
-      - map: ["enum.DamageStateVisualLayers.Base"]
-        sprite: Imperial/TinyBunny/Mobs/Alice/AliceMonster.rsi
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: AliceMonster
-    - type: CombatMode
-    - type: Physics
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeCircle
-            radius: 0.35
-          density: 250
-          mask:
-          - MobMask
-          layer:
-          - MobLayer
-    - type: MobState
+      - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+        state: glow
+        shader: unshaded
     - type: DamageStateVisuals
       states:
         Alive:
           Base: AliceMonster
+          BaseUnshaded: glow
         Critical:
-          Base: AliceMonster_dead
+          Base: AliceMonster_die
         Dead:
-          Base: AliceMonster_dead
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        400: Critical
-        500: Dead
+          Base: AliceMonster_die
     - type: MeleeWeapon
       altDisarm: false
       angle: 0
@@ -222,33 +148,9 @@
           Bloodloss: 20
           Slash: 20
           Structural: 35
-    - type: Tag
-      tags:
-        - DoorBumpOpener
-        - NoPaint
-    - type: Speech
-      speechSounds: DoctorDefVoice
-    - type: Hands
     - type: MovementSpeedModifier
-      baseWalkSpeed : 4.5
-      baseSprintSpeed : 5.5
-    - type: Body
-      prototype: Human
-    - type: NoSlip
-    - type: Vocal
-      sounds:
-        Male: AliceVoice
-        Unsexed: AliceVoice
-        Female: AliceVoice
-    - type: SlowOnDamage
-      speedModifierThresholds:
-        300: 0.8
-    - type: Access
-      groups:
-      - Captain
-    - type: AutoImplant
-      implants:
-       - StorageImplant
+      baseWalkSpeed : 4
+      baseSprintSpeed : 5.4
 
 - type: entity
   name: Wolf

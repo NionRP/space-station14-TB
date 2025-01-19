@@ -2,7 +2,7 @@
   id: Pit
   parent: BaseStructure
   name: Колодец
-  suffix: Tiny Bunny, Water
+  suffix: Tiny Bunny, Drink
   description: Глубокая шахта опускающаяся на многие метры вниз, до самых грунтовых вод.
   components:
   - type: Sprite
@@ -17,6 +17,40 @@
         maxVol: 300
         reagents:
         - ReagentId: Water
+          Quantity: 300
+  - type: DrainableSolution
+    solution: pool
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.390625,-0.453125,0.390625,0.453125"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: MoonshineStill
+  parent: BaseStructure
+  name: Самогонный аппарат
+  suffix: Tiny Bunny, Drink
+  description: Большое устройство, предназначенное для фильтрации спирта и преобразования его в самогон.
+  components:
+  - type: Sprite
+    sprite: Imperial\TinyBunny\Structures\MoonshineStill.rsi
+    state: samogoni
+  - type: InteractionOutline
+  - type: Physics
+  - type: Clickable
+  - type: SolutionContainerManager
+    solutions:
+      pool:
+        maxVol: 300
+        reagents:
+        - ReagentId: Moonshine
           Quantity: 300
   - type: DrainableSolution
     solution: pool

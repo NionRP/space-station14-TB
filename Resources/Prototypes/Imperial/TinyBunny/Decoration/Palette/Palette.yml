@@ -1,0 +1,31 @@
+- type: entity
+  id: Palette
+  parent: BaseStructure
+  name: Поддон с плиткой
+  suffix: Tiny Bunny, Decor
+  description: Платформа, на которую уложена керамическая плитка для удобства транспортировки.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette.rsi
+    state: p1
+  - type: InteractionOutline
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.4,0.3,0.4"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: Palette2
+  parent: Palette
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette.rsi
+    state: p2

@@ -1,0 +1,59 @@
+- type: entity
+  id: weird_sculpture
+  parent: BaseRock
+  name: Скульптура
+  suffix: Tiny Bunny, Decor
+  description: Страшная дворовая скульптура вымышленного героя.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Sculptures.rsi
+    state: ws
+
+- type: entity
+  id: weird_sculpture1
+  parent: weird_sculpture
+  suffix: Tiny Bunny, Decor
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Sculptures.rsi/64x64.rsi
+    state: ws1
+
+- type: entity
+  id: weird_sculpture2
+  parent: weird_sculpture
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Sculptures.rsi
+    state: ws2
+
+- type: entity
+  id: weird_sculpture3
+  parent: weird_sculpture
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Sculptures.rsi
+    state: ws3
+
+- type: entity
+  id: weird_sculpture4
+  parent: weird_sculpture
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Sculptures.rsi
+    state: ws4
+
+- type: entity
+  id: weird_sculpture5
+  parent: weird_sculpture
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Sculptures.rsi
+    state: ws5
+
+- type: entity
+  id: weird_sculpture6
+  parent: weird_sculpture
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Sculptures.rsi
+    state: ws6

@@ -1,0 +1,78 @@
+- type: entity
+  id: PaletteHigh
+  parent: Palette
+  suffix: Tiny Bunny, Decor
+  name: Поддон с кирпичами
+  description: Платформа, на которую уложены глинянные кирпичи для удобства транспортировки.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette_high.rsi
+    state: p1
+
+- type: entity
+  id: PaletteHigh2
+  parent: PaletteHigh
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette_high.rsi
+    state: p2
+
+- type: entity
+  id: PaletteHigh3
+  parent: PaletteHigh
+  name: Поддоны
+  description: Поддоны сложенные друг на друга для удобства транспортировки.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette_high.rsi
+    state: p3
+
+- type: entity
+  id: PaletteHigh4
+  parent: PaletteHigh
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette_high.rsi
+    state: p4
+  - type: Climbable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.4,0.3,0.4"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - HalfWallLayer
+
+- type: entity
+  id: PaletteHigh5
+  parent: PaletteHigh4
+  name: Поддон с цементом
+  description: Платформа, на которую уложены мешки цемента для удобства транспортировки.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette_high.rsi
+    state: p5
+  - type: Climbable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.4,0.3,0.4"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - HalfWallLayer
+
+- type: entity
+  id: PaletteHigh6
+  parent: PaletteHigh5
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Palette_high.rsi
+    state: p6

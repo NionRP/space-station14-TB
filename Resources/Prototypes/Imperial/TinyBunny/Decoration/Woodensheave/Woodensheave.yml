@@ -1,0 +1,10 @@
+- type: entity
+  id: woodensheave
+  parent: BaseStructureDynamic
+  name: Кабельная катушка
+  suffix: Tiny Bunny, Decor
+  description: Круглый предмет в форме барабана, такой как катушка, используемый для транспортировки различных типов электрических проводов.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/Woodensheave.rsi
+    state: base

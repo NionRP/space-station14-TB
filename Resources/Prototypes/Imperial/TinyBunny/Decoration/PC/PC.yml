@@ -1,0 +1,47 @@
+- type: entity
+  id: TBMonitor
+  parent: BaseStructure
+  name: Монитор
+  suffix: Tiny Bunny, Decor
+  description: Старый, но всё ещё исправно работающий монитор с потёртой рамкой и тусклым экраном, напоминает о первых днях цифровой эпохи.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/PC/monitor.rsi
+    state: base
+  - type: InteractionOutline
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.796875,-0.875,0.796875,0.875"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: TBKeyboard
+  parent: BaseStructure
+  name: Клавиатура
+  suffix: Tiny Bunny, Decor
+  description: Старая, но всё ещё функциональная клавиатура с потертыми клавишами и стершимися символами, хранит в себе следы множества напечатанных историй.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Decoration/PC/keyboard.rsi
+    state: base
+  - type: InteractionOutline
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.796875,-0.875,0.796875,0.875"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
