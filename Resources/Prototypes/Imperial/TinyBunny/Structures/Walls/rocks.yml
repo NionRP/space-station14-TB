@@ -3,7 +3,7 @@
 - type: entity
   parent: BaseStructure
   id: REWTinyBunnyBase
-  name: гора
+  name: Гора
   description: Рельеф с поднятием местностим с выраженным склоном и подножием.
   abstract: true
   components:
@@ -28,7 +28,7 @@
 - type: entity
   parent: REWTinyBunnyBase
   id: REWTinyBunny1
-  suffix: Tiny Bunny, PN, 1 (ВОС->ЗАП)
+  suffix: Tiny Bunny, Wall, 1 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -51,7 +51,7 @@
 - type: entity
   parent: REWTinyBunnyBase
   id: REWTinyBunny2
-  suffix: Tiny Bunny, PN, 2 (ВОС->ЗАП)
+  suffix: Tiny Bunny, Wall, 2 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -60,7 +60,7 @@
 - type: entity
   parent: REWTinyBunnyBase
   id: REWTinyBunny3
-  suffix: Tiny Bunny, PN, 3 (ВОС->ЗАП)
+  suffix: Tiny Bunny, Wall, 3 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -83,7 +83,7 @@
 - type: entity
   parent: REWTinyBunnyBase
   id: REWTinyBunny4
-  suffix: Tiny Bunny, PN, 4 (ВОС->ЗАП)
+  suffix: Tiny Bunny, Wall, 4 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -106,7 +106,7 @@
 - type: entity
   parent: REWTinyBunnyBase
   id: REWTinyBunny5
-  suffix: Tiny Bunny, PN, 5 (ВОС->ЗАП)
+  suffix: Tiny Bunny, Wall, 5 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -131,7 +131,7 @@
 - type: entity
   parent: BaseStructure
   id: SNTinyBunnyBase
-  name: гора
+  name: Гора
   description: Рельеф с поднятием местностим с выраженным склоном и подножием.
   abstract: true
   components:
@@ -156,7 +156,7 @@
 - type: entity
   parent: SNTinyBunnyBase
   id: SNSTinyBunny1
-  suffix: Tiny Bunny, PN, 1 (ЮГ->СЕВ)
+  suffix: Tiny Bunny, Wall, 1 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -179,7 +179,7 @@
 - type: entity
   parent: SNTinyBunnyBase
   id: SNTinyBunny2
-  suffix: Tiny Bunny, PN,  2 (ЮГ->СЕВ)
+  suffix: Tiny Bunny, Wall,  2 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -202,7 +202,7 @@
 - type: entity
   parent: SNTinyBunnyBase
   id: SNTinyBunny3
-  suffix: Tiny Bunny, PN, 3 (ЮГ->СЕВ)
+  suffix: Tiny Bunny, Wall, 3 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -225,7 +225,7 @@
 - type: entity
   parent: SNTinyBunnyBase
   id: SNTinyBunny4
-  suffix: Tiny Bunny, PN,  4 (ЮГ->СЕВ)
+  suffix: Tiny Bunny, Wall,  4 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -248,7 +248,7 @@
 - type: entity
   parent: SNTinyBunnyBase
   id: SNTinyBunny5
-  suffix: Tiny Bunny, PN, 5 (ЮГ->СЕВ)
+  suffix: Tiny Bunny, Wall, 5 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -273,7 +273,7 @@
 - type: entity
   parent: BaseStructure
   id: UTTinyBunnyBase
-  name: гора
+  name: Гора
   description: Рельеф с поднятием местностим с выраженным склоном и подножием.
   abstract: true
   components:
@@ -298,7 +298,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTTinyBunny1
-  suffix: Tiny Bunny, PN,  1 (угол, НИЖ->ЛЕВ)
+  suffix: Tiny Bunny, Wall,  1 (угол, НИЖ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -321,7 +321,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTSTinyBunny2
-  suffix: Tiny Bunny, 2 (угол, НИЖ->ЛЕВ)
+  suffix: Tiny Bunny, Wall, 2 (угол, НИЖ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -344,7 +344,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTTinyBunny3
-  suffix: Tiny Bunny, PN,  1 (угол, НИЖ->ПРАВ)
+  suffix: Tiny Bunny, Wall,  1 (угол, НИЖ->ПРАВ)
   components:
   - type: Sprite
     layers:
@@ -367,7 +367,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTTinyBunny4
-  suffix: Tiny Bunny, PN,  2 (угол, НИЖ->ПРАВ)
+  suffix: Tiny Bunny, Wall,  2 (угол, НИЖ->ПРАВ)
   components:
   - type: Sprite
     layers:
@@ -390,7 +390,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTTinyBunnyr5
-  suffix: Tiny Bunny, PN,  1 (угол, ВЕРХ->ЛЕВ)
+  suffix: Tiny Bunny, Wall,  1 (угол, ВЕРХ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -413,7 +413,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTTinyBunny6
-  suffix: Tiny Bunny, PN, 2 (угол, ВЕРХ->ЛЕВ)
+  suffix: Tiny Bunny, Wall, 2 (угол, ВЕРХ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -436,7 +436,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTTinyBunny7
-  suffix: Tiny Bunny, PN, 1 (угол, ВЕРХ->ПРАВ)
+  suffix: Tiny Bunny, Wall, 1 (угол, ВЕРХ->ПРАВ)
   components:
   - type: Sprite
     layers:
@@ -459,7 +459,7 @@
 - type: entity
   parent: UTTinyBunnyBase
   id: UTTinyBunny8
-  suffix: Tiny Bunny, PN, 2 (угол, ВЕРХ->ПРАВ)
+  suffix: Tiny Bunny, Wall, 2 (угол, ВЕРХ->ПРАВ)
   components:
   - type: Sprite
     layers:
@@ -478,3 +478,5 @@
         - TableLayer
         - MidImpassable
         - LowImpassable
+
+# By Poeno

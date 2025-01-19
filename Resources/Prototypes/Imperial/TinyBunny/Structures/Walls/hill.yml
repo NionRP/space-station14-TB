@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseWall
   id: HolmIndestructible
-  name: холм
+  name: Холм
   description: Небольшая возвышенность, в плане округлой или овальной формы, с пологими склонами и слабо выраженным подножием.
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
     - type: Tag
       tags:
@@ -15,3 +15,5 @@
     - type: IconSmooth
       key: walls
       base: holm
+
+# By Poeno

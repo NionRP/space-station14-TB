@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseWall
-  id: WallWoodFallout
+  id: TBWallWood
   name: Деревянная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -20,9 +20,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallSidingFallout
+  id: TBWallSiding
   name: ПВХ стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -40,9 +40,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallBrickFallout
+  id: TBWallBrick
   name: Кирпичная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -60,9 +60,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallBunkerFallout
+  id: TBWallBunker
   name: Бункерная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -80,9 +80,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallDungeonFallout
+  id: TBWallDungeon
   name: Укрепленная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -100,9 +100,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallMetalFallout
+  id: TBWallMetal
   name: Стальная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -120,9 +120,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallRustMetalFallout
+  id: TBWallRustMetal
   name: Ржавая стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -140,9 +140,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallScrapFallout
+  id: TBWallScrap
   name: Профнастиловая стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -160,9 +160,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallSewerFallout
+  id: TBWallSewer
   name: Канализационная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -180,9 +180,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallReinfMetalFallout
+  id: TBWallReinfMetal
   name: Бронированная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -200,9 +200,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallRustReinfMetalFallout
+  id: TBWallRustReinfMetal
   name: Ржавая бронированная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -220,9 +220,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallVaultFallout
+  id: TBWallVault
   name: Стена убежища
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -240,9 +240,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallConcreteFallout
+  id: TBWallConcrete
   name: Бетонная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   description: Стена, для создания которой устраивается опалубка с железной арматурой внутри, в которую заливается жидкий бетон.
   components:
   - type: Tag
@@ -261,9 +261,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallRockFallout
+  id: TBWallRock
   name: Каменная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -281,9 +281,9 @@
 
 - type: entity
   parent: BaseWall
-  id: WallPrisonFallout
+  id: TBWallPrison
   name: Тюремная стена
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -301,10 +301,10 @@
 
 - type: entity
   parent: BaseWall
-  id: WallConcreteFalloutDestructible
+  id: TBWallConcreteDestructible
   name: Ветхая бетонная стена
   description: Вот-вот разрушится, если по ней постучать.
-  suffix: Tiny Bunny, PN
+  suffix: Tiny Bunny, Wall
   components:
   - type: Tag
     tags:
@@ -329,7 +329,7 @@
               path: /Audio/Effects/metal_break1.ogg
 
 - type: entity
-  id: STWallRockBasalt
+  id: TBWallRockBasalt
   name: basalt
   parent: BaseWall
   components:
@@ -350,8 +350,8 @@
           state: rock_wall_west
 
 - type: entity
-  id: WallRockBasaltDestructible
-  suffix: Tiny Bunny, PN
+  id: TBWallRockBasaltDestructible
+  suffix: Tiny Bunny, Wall
   name: Хрупкий базальт
   description: Вот-вот разрушится, если по нему постучать.
   parent: WallRock
@@ -382,9 +382,9 @@
 
 - type: entity
   parent: BaseWall
-  id: STWallNecropolis
-  suffix: Tiny Bunny, PN
-  name: стена чистилища
+  id: TBWallNecropolis
+  suffix: Tiny Bunny, Wall
+  name: Стена чистилища
   components:
   - type: Tag
     tags:
@@ -396,3 +396,5 @@
   - type: IconSmooth
     key: walls
     base: necropolis
+
+#By Poeno
