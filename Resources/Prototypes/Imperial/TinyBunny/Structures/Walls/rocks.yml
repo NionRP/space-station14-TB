@@ -1,0 +1,480 @@
+# ГОРЫ (ВОСТОК -> ЗАПАД)
+
+- type: entity
+  parent: BaseStructure
+  id: REWTinyBunnyBase
+  name: гора
+  description: Рельеф с поднятием местностим с выраженным склоном и подножием.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/Other/Rocks/east_west.rsi
+    drawdepth: WallTops
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-1.0,0.0,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: REWTinyBunnyBase
+  id: REWTinyBunny1
+  suffix: Tiny Bunny, PN, 1 (ВОС->ЗАП)
+  components:
+  - type: Sprite
+    layers:
+    - state: rew1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-1.0,0.1,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: REWTinyBunnyBase
+  id: REWTinyBunny2
+  suffix: Tiny Bunny, PN, 2 (ВОС->ЗАП)
+  components:
+  - type: Sprite
+    layers:
+    - state: rew2
+
+- type: entity
+  parent: REWTinyBunnyBase
+  id: REWTinyBunny3
+  suffix: Tiny Bunny, PN, 3 (ВОС->ЗАП)
+  components:
+  - type: Sprite
+    layers:
+    - state: rew3
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-1.0,0.2,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: REWTinyBunnyBase
+  id: REWTinyBunny4
+  suffix: Tiny Bunny, PN, 4 (ВОС->ЗАП)
+  components:
+  - type: Sprite
+    layers:
+    - state: rew4
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-1.0,0.2,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: REWTinyBunnyBase
+  id: REWTinyBunny5
+  suffix: Tiny Bunny, PN, 5 (ВОС->ЗАП)
+  components:
+  - type: Sprite
+    layers:
+    - state: rew5
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-1.0,0.1,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+# ГОРЫ (ЮГ -> СЕВЕР)
+
+- type: entity
+  parent: BaseStructure
+  id: SNTinyBunnyBase
+  name: гора
+  description: Рельеф с поднятием местностим с выраженным склоном и подножием.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/Other/Rocks/south_north.rsi
+    drawdepth: WallTops
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.0,-0.6,1.0,0.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: SNTinyBunnyBase
+  id: SNSTinyBunny1
+  suffix: Tiny Bunny, PN, 1 (ЮГ->СЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: sn1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.0,-0.7,1.0,0.3"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: SNTinyBunnyBase
+  id: SNTinyBunny2
+  suffix: Tiny Bunny, PN,  2 (ЮГ->СЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: sn2
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.0,-0.8,1.0,0.2"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: SNTinyBunnyBase
+  id: SNTinyBunny3
+  suffix: Tiny Bunny, PN, 3 (ЮГ->СЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: sn3
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.0,-0.8,1.0,0.2"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: SNTinyBunnyBase
+  id: SNTinyBunny4
+  suffix: Tiny Bunny, PN,  4 (ЮГ->СЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: sn4
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.0,-0.8,1.0,0.2"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: SNTinyBunnyBase
+  id: SNTinyBunny5
+  suffix: Tiny Bunny, PN, 5 (ЮГ->СЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: sn5
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.0,-0.8,1.0,0.2"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+# УГЛЫ
+
+- type: entity
+  parent: BaseStructure
+  id: UTTinyBunnyBase
+  name: гора
+  description: Рельеф с поднятием местностим с выраженным склоном и подножием.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/Walls/Other/Rocks/u_turns.rsi
+    drawdepth: WallTops
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.0,-0.6,1.0,0.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTTinyBunny1
+  suffix: Tiny Bunny, PN,  1 (угол, НИЖ->ЛЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: udl1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.0,-1.0,0.8,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTSTinyBunny2
+  suffix: Tiny Bunny, 2 (угол, НИЖ->ЛЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: udl2
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-1.0,0.8,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTTinyBunny3
+  suffix: Tiny Bunny, PN,  1 (угол, НИЖ->ПРАВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: udr1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-1.0,0.6,1.0"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTTinyBunny4
+  suffix: Tiny Bunny, PN,  2 (угол, НИЖ->ПРАВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: udr2
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-0.8,0.6,0.8"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTTinyBunnyr5
+  suffix: Tiny Bunny, PN,  1 (угол, ВЕРХ->ЛЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: uul1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-0.6,0.6,0.4"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTTinyBunny6
+  suffix: Tiny Bunny, PN, 2 (угол, ВЕРХ->ЛЕВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: uul2
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-0.6,0.6,0.8"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTTinyBunny7
+  suffix: Tiny Bunny, PN, 1 (угол, ВЕРХ->ПРАВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: uur1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-0.6,0.6,0.8"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: UTTinyBunnyBase
+  id: UTTinyBunny8
+  suffix: Tiny Bunny, PN, 2 (угол, ВЕРХ->ПРАВ)
+  components:
+  - type: Sprite
+    layers:
+    - state: uur2
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-0.6,0.6,0.8"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
