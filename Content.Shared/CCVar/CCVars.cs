@@ -31,7 +31,7 @@ namespace Content.Shared.CCVar
 
         // Imperial Space Start
         public static readonly CVarDef<string> LobbyName =
-            CVarDef.Create("server.lobby_name", "MyServer", CVar.REPLICATED | CVar.SERVER);
+             CVarDef.Create("server.lobby_name", "Tiny Bunny", CVar.REPLICATED | CVar.SERVER);
         // Imperial Space End
         /*
          * Ambience

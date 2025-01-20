@@ -91,7 +91,7 @@ ent-KEEYN_6 = Кайф
     .suffix = { "COMMUNITY,POSTER" }
 
 ent-KEEYN_7 = Премия!
-    .desc = Работайте лучше во благо НТ, НТ вас наградит!
+    .desc = Работайте лучше во благо , ССР вас наградит!
     .suffix = { "COMMUNITY,POSTER" }
 
 ent-Swebit_1 = MK58 - Оружие для настоящих мужчин!
