@@ -1,0 +1,11 @@
+- type: entity
+  name: Диван
+  id: TBDivan
+  suffix: Tiny Bunny, Decor
+  parent: ChairBase
+  description: Старый, но удобный диван с вмятинами на подушках и вытертыми подлокотниками, словно впитал в себя годы разговоров и тихих вечеров.
+  components:
+  - type: Sprite
+    sprite: Imperial/TinyBunny/Structures/divan.rsi
+    state: base
+    scale: 1.5, 1.5

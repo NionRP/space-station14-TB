@@ -1,12 +1,44 @@
 - type: entity
   parent: TBBaseTrashCache
   id: TBTrashcanStorageFill
-  name: мусор
+  name: Мусорный бак
   abstract: true
   suffix: Tiny Bunny, Trash
   components:
     - type: StorageFill
       contents:
+        - id: BeefCanDeadSector
+          prob: 0.15
+        - id: BeefCanDeadSectorTrash
+          prob: 0.6
+        - id: SardinesCanDeadSector
+          prob: 0.15
+        - id: SardinesCanDeadSectorTrash
+          prob: 0.6
+        - id: FoodTinMRE
+          prob: 0.15
+        - id: FoodTinMRETrash
+          prob: 0.6
+        - id: PorkCanDeadSector
+          prob: 0.15
+        - id: PorkCanDeadSectorTrash
+          prob: 0.6
+        - id: TomatoCanDeadSector
+          prob: 0.15
+        - id: TomatoCanDeadSectorTrash
+          prob: 0.6
+        - id: OldMeatCanDeadSector
+          prob: 0.15
+        - id: OldMeatCanDeadSectorTrash
+          prob: 0.6
+        - id: MeatCanDeadSector
+          prob: 0.15
+        - id: MeatCanDeadSectorTrash
+          prob: 0.6
+        - id: CigaretteSpent
+          prob: 0.6
+        - id: FoodPlateSmallTrash
+          prob: 0.6
         - id: BeefCanDeadSector
           prob: 0.15
         - id: BeefCanDeadSectorTrash
@@ -39,6 +71,27 @@
           prob: 0.3
         - id: FoodPlateSmallTrash
           prob: 0.3
+        - id: FoodPacketCnDsTrash
+          prob: 0.6
+        - id: FoodPacketCnDsTrash
+          prob: 0.3
+        - id: FoodPacketSemkiTrash
+          prob: 0.6
+        - id: FoodPacketSemkiTrash
+          prob: 0.3
+        - id: FoodPacketEnergyTrash
+          prob: 0.6
+        - id: FoodPacketEnergyTrash
+          prob: 0.3
+        - id: Roubles50
+          prob: 0.15
+        - id: Roubles100
+          prob: 0.15
+        - id: Roubles1000
+          prob: 0.03
+        - id: Roubles5000
+          prob: 0.01
+
 
 - type: entity
   parent: [TBBaseTrashCache, TBTrashcanStorageFill]
@@ -76,3 +129,12 @@
       sprite: Imperial/TinyBunny/Structures/Trashcan.rsi
       state: tc4
 
+- type: entity
+  parent: [TBBaseTrashCache, TBTrashcanStorageFill]
+  id: TBtrashbin
+  name: Мусорка
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: Imperial/TinyBunny/Structures/Trashcan.rsi/trashbin.rsi
+      state: base
