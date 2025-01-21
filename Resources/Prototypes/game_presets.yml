@@ -1,77 +1,77 @@
-- type: gamePreset
-  id: Survival
-  alias:
-    - survival
-  name: survival-title
-  showInVote: true # secret # imperial add-on
-  description: survival-description
-  rules:
-    - RampingStationEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Survival
+#   alias:
+#     - survival
+#   name: survival-title
+#   showInVote: false # secret # imperial add-on
+#   description: survival-description
+#   rules:
+#     - RampingStationEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: AllAtOnce
-  name: all-at-once-title
-  description: all-at-once-description
-  showInVote: false
-  rules:
-    - Nukeops
-    - Traitor
-    - Revolutionary
-    - Zombie
-    - RampingStationEventScheduler
+# - type: gamePreset
+#   id: AllAtOnce
+#   name: all-at-once-title
+#   description: all-at-once-description
+#   showInVote: false
+#   rules:
+#     - Nukeops
+#     - Traitor
+#     - Revolutionary
+#     - Zombie
+#     - RampingStationEventScheduler
 
-- type: gamePreset
-  id: Extended
-  alias:
-  - extended
-  - shittersafari
-  name: extended-title
-  showInVote: true #2boring2vote # imperial add-on
-  description: extended-description
-  rules:
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Extended
+#   alias:
+#   - extended
+#   - shittersafari
+#   name: extended-title
+#   showInVote: false #2boring2vote # imperial add-on
+#   description: extended-description
+#   rules:
+#   - BasicStationEventScheduler
+#   - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Greenshift
-  alias:
-  - greenshift
-  - shittersafarideluxeedition
-  name: greenshift-title
-  showInVote: false #4boring4vote
-  description: greenshift-description
-  rules:
-  - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Greenshift
+#   alias:
+#   - greenshift
+#   - shittersafarideluxeedition
+#   name: greenshift-title
+#   showInVote: false #4boring4vote
+#   description: greenshift-description
+#   rules:
+#   - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Secret
-  alias:
-    - secret
-    - sekrit
-  name: secret-title
-  showInVote: true
-  description: secret-description
-  rules:
-    - Secret
+# - type: gamePreset
+#   id: Secret
+#   alias:
+#     - secret
+#     - sekrit
+#   name: secret-title
+#   showInVote: false
+#   description: secret-description
+#   rules:
+#     - Secret
 
-- type: gamePreset
-  id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
-  alias:
-    - secretextended
-  name: secret-title
-  showInVote: false #Admin Use
-  description: secret-description
-  rules:
-    - BasicStationEventScheduler
+# - type: gamePreset
+#   id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
+#   alias:
+#     - secretextended
+#   name: secret-title
+#   showInVote: false #Admin Use
+#   description: secret-description
+#   rules:
+#     - BasicStationEventScheduler
 
-- type: gamePreset
-  id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
-  alias:
-  - secretgreenshift
-  name: secret-title
-  showInVote: false #Admin Use
-  description: secret-description
+# - type: gamePreset
+#   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
+#   alias:
+#   - secretgreenshift
+#   name: secret-title
+#   showInVote: false #Admin Use
+#   description: secret-description
 
 - type: gamePreset
   id: Sandbox
@@ -79,99 +79,98 @@
     - sandbox
   name: sandbox-title
   description: sandbox-description
-  showInVote: false # Not suitable for use without admin intervention, since entity spamming can quickly crash a server
-  maxPlayers: 5
+  showInVote: true # Not suitable for use without admin intervention, since entity spamming can quickly crash a server
   rules:
     - Sandbox
 
-- type: gamePreset
-  id: Traitor
-  alias:
-    - traitor
-  name: traitor-title
-  description: traitor-description
-  showInVote: true # imperial add-on
-  rules:
-    - Traitor
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Traitor
+#   alias:
+#     - traitor
+#   name: traitor-title
+#   description: traitor-description
+#   showInVote: false # imperial add-on
+#   rules:
+#     - Traitor
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Deathmatch
-  alias:
-    - deathmatch
-    - dm
-  name: death-match-title
-  description: death-match-description
-  maxPlayers: 15
-  showInVote: true
-  supportedMaps: DeathMatchMapPool
-  rules:
-    - DeathMatch31
+# - type: gamePreset
+#   id: Deathmatch
+#   alias:
+#     - deathmatch
+#     - dm
+#   name: death-match-title
+#   description: death-match-description
+#   maxPlayers: 15
+#   showInVote: false
+#   supportedMaps: DeathMatchMapPool
+#   rules:
+#     - DeathMatch31
 
-- type: gamePreset
-  id: Nukeops
-  alias:
-    - nukeops
-  name: nukeops-title
-  description: nukeops-description
-  showInVote: true # imperial add-on
-  rules:
-    - Nukeops
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Nukeops
+#   alias:
+#     - nukeops
+#   name: nukeops-title
+#   description: nukeops-description
+#   showInVote: false # imperial add-on
+#   rules:
+#     - Nukeops
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Revolutionary
-  alias:
-    - rev
-    - revs
-    - revolutionaries
-  name: rev-title
-  description: rev-description
-  showInVote: true # imperial add-on
-  rules:
-    - Revolutionary
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Revolutionary
+#   alias:
+#     - rev
+#     - revs
+#     - revolutionaries
+#   name: rev-title
+#   description: rev-description
+#   showInVote: false # imperial add-on
+#   rules:
+#     - Revolutionary
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Zombie
-  alias:
-  - zombie
-  - zombies
-  - Zombies
-  - zz14
-  - zomber
-  name: zombie-title
-  description: zombie-description
-  showInVote: true # imperial add-on
-  rules:
-  - Zombie
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Zombie
+#   alias:
+#   - zombie
+#   - zombies
+#   - Zombies
+#   - zz14
+#   - zomber
+#   name: zombie-title
+#   description: zombie-description
+#   showInVote: false # imperial add-on
+#   rules:
+#   - Zombie
+#   - BasicStationEventScheduler
+#   - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Pirates
-  alias:
-    - pirates
-  name: pirates-title
-  description: pirates-description
-  showInVote: true # imperial add-on
-  rules:
-    - Pirates
-    - BasicStationEventScheduler
-    - BasicRoundstartVariation
+# - type: gamePreset
+#   id: Pirates
+#   alias:
+#     - pirates
+#   name: pirates-title
+#   description: pirates-description
+#   showInVote: false # imperial add-on
+#   rules:
+#     - Pirates
+#     - BasicStationEventScheduler
+#     - BasicRoundstartVariation
 
-# imperial add-on begin
-- type: gamePreset
-  id: PeaceAndTranquility
-  alias:
-    - Peace
-  name: peace-and-tranquility-title
-  description: peace-and-tranquility-desc
-  showInVote: true
-# imperial add-on end
+# # imperial add-on begin
+# - type: gamePreset
+#   id: PeaceAndTranquility
+#   alias:
+#     - Peace
+#   name: peace-and-tranquility-title
+#   description: peace-and-tranquility-desc
+#   showInVote: true
+# # imperial add-on end
