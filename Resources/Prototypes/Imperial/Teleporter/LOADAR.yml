@@ -1,0 +1,43 @@
+- type: entity
+  name: Stairs Start
+  id: StairsStart
+  suffix: TP
+  components:
+  - type: Climbing
+  - type: Sprite
+    sprite: Structures/Storage/tanks.rsi
+    layers:
+      - state: fueltank-2
+  - type: Teleporter
+    teleporterKey: stairs_1
+    cooldown: 1
+  - type: Physics
+    shape:
+      !type:PhysShapeCircle
+        radius: 0.5
+    mask:
+    - Mob
+    layer:
+    - Mob
+
+- type: entity
+  name: Stairs End
+  id: StairsEnd
+  suffix: TP
+  components:
+  - type: Climbing
+  - type: Sprite
+    sprite: Structures/Storage/tanks.rsi
+    layers:
+      - state: watertank-2
+  - type: Teleporter
+    teleporterKey: stairs_1
+    cooldown: 1
+  - type: Physics
+    shape:
+      !type:PhysShapeCircle
+        radius: 0.5
+    mask:
+    - Mob
+    layer:
+    - Mob
